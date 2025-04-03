@@ -6,8 +6,8 @@ import header from "../assets/header.png";
 const Header = () => {
 	return (
 		<div
-			className="bg-contain w-full h-screen bg-no-repeat"
-			style={{ backgroundImage: `url(${header})` }}
+			className="bg-cover bg-center  h-screen"
+			style={{ backgroundImage: `url(${header})`, }}
 		>
 			<Navbar />
 			<Hero />

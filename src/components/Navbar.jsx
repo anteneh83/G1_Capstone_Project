@@ -13,13 +13,14 @@ const Navbar = () => {
 					<NavLink to="/" className="">
 						<img className="" src={logo1} alt="logo" />
 					</NavLink>
-                    <div className="dropdown ml-6">
-						<label tabIndex={0} className="btn btn-ghost lg:hidden">
+					
+					<div className="dropdown dropdown-center pl-10 ml-6">
+						<label tabIndex={0} className="btn btn-ghost pl-20 lg:hidden">
 							<FaBarsStaggered className="h-6 w-6" />
 						</label>
 						<ul
 							tabIndex={0}
-							className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-23"
+							className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-50"
 						>
 							<NavLinks />
 						</ul>
