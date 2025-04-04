@@ -1,9 +1,19 @@
-import React from 'react'
+import React from "react";
+import header from "../assets/contact-hero.png";
+import Hero from "../components/Hero";
+import { Navbar } from "../components";
 
 const Contact = () => {
-  return (
-    <div>Contact</div>
-  )
-}
+	return (
+		<section
+			className="bg-cover bg-center  h-screen"
+			style={{ backgroundImage: `url(${header})` }}
+		>
+			<Hero className="items-center" title="contact" link={`contact`} />
 
-export default Contact
+			<h1>content</h1>
+		</section>
+	);
+};
+
+export default Contact;
