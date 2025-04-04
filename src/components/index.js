@@ -6,4 +6,5 @@ export { default as Footer } from "./Footer";
 export { default as SocialLinks } from "./SocialLinks";
 export { default as ContactInfo } from "./ContactInfo";
 export { default as Button } from "./Button";
-
+export { default as Explore } from "./Explore";
+export { default as Card } from "./Card";

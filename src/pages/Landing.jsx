@@ -1,8 +1,7 @@
 import React from "react";
 
-import { Footer, Header, Hero, Navbar } from "../components";
+import { Footer, Header, Hero, Explore } from "../components";
 import header from "../assets/header.png";
-import { Outlet } from "react-router-dom";
 const Landing = () => {
 	return (
 		<>
@@ -45,6 +44,7 @@ const Landing = () => {
 						</p>
 					</div>
 				</Hero>
+				<Explore/>
 				<Footer/>
 			</section>
 		</>
