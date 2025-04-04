@@ -4,7 +4,7 @@ const Hero = ({ className, children, title, link }) => {
 	if (link === "home" || title === "destination") return <>{children}</>;
 	return (
 		<div
-			className={`h-screen opacity-100 flex flex-col gap-6 ${className} justify-center pl-20`}
+			className={`h-screen opacity-100 flex flex-col gap-6 ${className} justify-center `}
 		>
 			<h1 className="text-white text-5xl font-bold capitalize">
 				{title}

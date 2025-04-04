@@ -1,7 +1,7 @@
 import { HiLocationMarker } from "react-icons/hi";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
-
+import Button from "./Button";
 import logo from "../assets/logo 5.png";
 import { Link } from "react-router-dom";
 import SocialLinks from "./SocialLinks";
@@ -15,15 +15,22 @@ const Footer = () => {
 				style={{ backgroundImage: `url(${header})` }}
 			>
 				<div
-					className={` opacity-100 flex flex-col gap-6 items-center text-center py-10 justify-center pl-20`}
+					className={`flex flex-col space-y-6 items-center text-center py-10 px-4 justify-center`}
 				>
 					<h1 className="text-white text-5xl font-bold capitalize">
-						Subcribe to get special price
+						Subscribe to get special price
 					</h1>
-                    <p className="text-white opacity-80">Dont wanna miss something? subscribe right now and get special <br /> promotion and monthly newsletter</p>
-					<div className="w-[80vh] text-center mb-20 mt-5   py-1.5 px-3 bg-white rounded-3xl flex justify-between">
-						<input className="px-2"  type="text" placeholder="type your email here"/>
-                        <button className=" rounded-3xl p-2 px-5 text-white bg-black">subscribe</button>
+					<p className="text-white opacity-80">
+						Don't wanna miss something? subscribe right now and get
+						special <br /> promotion and monthly newsletter
+					</p>
+					<div className="md:w-[80vh] text-center mb-20 mt-5  py-1.5 px-3 bg-white rounded-full flex items-center justify-between">
+						<input
+							className="px-2 flex-1 outline-none"
+							type="text"
+							placeholder="Type your email here"
+						/>
+						<Button>Subscribe</Button>
 					</div>
 				</div>
 			</div>

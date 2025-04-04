@@ -6,7 +6,7 @@ import logo1 from "../assets/logo1.png";
 import NavLinks from "./NavLinks";
 const Navbar = () => {
 	return (
-		<nav className="bg-[#120B0B82] fixed w-screen">
+		<nav className="bg-[#120B0B82] fixed w-screen glass z-1000">
 			<div className="px-10">
 				<div className="flex justify-between items-center">
 					{/* TITLE */}

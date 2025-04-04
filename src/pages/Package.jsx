@@ -1,17 +1,23 @@
-import header from '../assets/package-hero.png'
-import { Navbar } from '../components'
-import Hero from '../components/Hero'
+import header from "../assets/package-hero.png";
+import { Navbar,Footer,Hero } from "../components";
 const Package = () => {
-  return (
-    <section
-			className="bg-cover bg-center  h-screen"
-			style={{ backgroundImage: `url(${header})` }}
-		>
-			<Hero className="items-center" title=" travel package" link={`package`}/>
+	return (
+		<>
+			<section
+				className="bg-cover bg-center  h-screen"
+				style={{ backgroundImage: `url(${header})` }}
+			>
+				<Hero
+					className="items-center"
+					title=" travel package"
+					link={`package`}
+				/>
+			</section>
+			<main>
+				<Footer />
+			</main>
+		</>
+	);
+};
 
-			<h1>content</h1>
-		</section>
-  )
-}
-
-export default Package
+export default Package;
