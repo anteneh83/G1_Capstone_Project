@@ -6,14 +6,12 @@ const Card = ({ card, title, text }) => {
 			<figure>
 				<img src={card} alt="Shoes" />
 			</figure>
-			{title ? (
-				<div className="card-body">
+			
+				<div className={ title? `card-body` : 'none' }>
 					<h2 className="card-title">{title}</h2>
 					<p className="text-[#555555]">{text}</p>
 				</div>
-			) : (
-				""
-			)}
+			
 		</div>
 	);
 };

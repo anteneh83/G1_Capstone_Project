@@ -8,3 +8,4 @@ export { default as ContactInfo } from "./ContactInfo";
 export { default as Button } from "./Button";
 export { default as Explore } from "./Explore";
 export { default as Card } from "./Card";
+export { default as Choose } from "./Choose";
