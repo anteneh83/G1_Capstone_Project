@@ -7,7 +7,7 @@ const About = () => {
 			<section
 				className="bg-cover bg-center  h-screen"
 				style={{ backgroundImage: `url(${header})` }}
-			>
+			>	<p>Hello about us</p>
 				<Hero
 					className={`items-center`}
 					title="about us"
