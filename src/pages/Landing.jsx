@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Footer, Header, Hero, Explore } from "../components";
+import { Footer, Header, Hero, Explore,Choose } from "../components";
 import header from "../assets/header.png";
 const Landing = () => {
 	return (
@@ -45,6 +45,7 @@ const Landing = () => {
 					</div>
 				</Hero>
 				<Explore/>
+				<Choose/>
 				<Footer/>
 			</section>
 		</>
