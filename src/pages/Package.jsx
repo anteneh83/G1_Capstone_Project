@@ -8,7 +8,7 @@ import planeImage from '../assets/package-plane.png'
 import storyImage1 from '../assets/package-story-1.png/'
 
 import header from '../assets/package-hero.png'
-import { Navbar, Footer, Hero } from '../components'
+import { Navbar, Footer, Hero, Button } from '../components'
 import PackageCard from '../components/PackageCard'
 
 // Define the packages array outside the component
@@ -82,7 +82,7 @@ const Package = () => {
 					link={`package`}
 				/>
 			</section>
-			<main className="bg-white px-14 py-32">
+			<main className="md:max-[54.6rem]:px-14 px-20 md:px-20 xl:px-20  min-[69.5rem]:px-14 py-32">
 				<section>
 					<div className="flex items-center justify-between">
 						<div className="flex gap-4 flex-col py-14">
@@ -101,7 +101,7 @@ const Package = () => {
 						</div>
 					</div>
 
-					<div className="flex flex-wrap gap-6 items-center py-14">
+					<div className="grid grid-cols-[repeat(1,_minmax(20rem,_27.8rem))] md:justify-between justify-center gap-5 md:grid-cols-[repeat(2,_minmax(20rem,_27.8rem))] min-[69.5rem]:grid-cols-[repeat(3,_minmax(20rem,_27.8rem))] py-14">
 						{packages.map((pkg, index) => (
 							<PackageCard key={index} package={pkg} />
 						))}
@@ -128,9 +128,7 @@ const Package = () => {
 							</p>
 						</div>
 
-						<div className="bg-black w-fit h-fit text-white rounded-3xl py-2 px-4">
-							View more
-						</div>
+						<Button btnType="large">View more</Button>
 					</div>
 
 					<div className="grid gap-14 grid-cols-[522px_1fr] grid-rows-[repeat(2,514px)]">
@@ -150,9 +148,9 @@ const Package = () => {
 								</p>
 							</div>
 
-							<div className="bg-black font-semibold text-[1.2rem] w-fit h-fit text-white rounded-[30px] py-2 mb-7 px-5 justify-self-end">
+							<Button btnType="large" className="mb-8">
 								Read more
-							</div>
+							</Button>
 						</div>
 						<div className="px-10 py-4 row-start-2  shadow-lg flex flex-col justify-between h-full">
 							<div>
@@ -169,18 +167,18 @@ const Package = () => {
 								</p>
 							</div>
 
-							<div className="bg-black font-semibold text-[1.2rem] w-fit h-fit text-white rounded-[30px] py-2 mb-7 px-5 justify-self-end">
+							<Button btnType="large" className="mb-8">
 								Read more
-							</div>
+							</Button>
 						</div>
 
-						<div className="row-start-1 row-end-3 col-start-2 grid gap-0 grid-rows-[auto_1fr]">
+						<div className="row-start-1 shadow-lg rounded-xl bg-white row-end-3 col-start-2 grid gap-0 grid-rows-[auto_1fr]">
 							<img
-								className="h-[679px] w-full"
+								className="h-[679px] w-full rounded-t-xl object-cover"
 								src={storyImage1}
 								alt=""
 							/>
-							<div className="px-10 py-4  shadow-lg flex flex-col  justify-between">
+							<div className="px-10 py-4   flex flex-col  justify-between">
 								<div>
 									<p className="font-normal leading-16 text-2xl ">
 										Tips | Travel
@@ -195,9 +193,9 @@ const Package = () => {
 									</p>
 								</div>
 
-								<div className="bg-black font-semibold text-[1.2rem] w-fit h-fit text-white rounded-[30px] py-2 mb-7 px-5 justify-self-end">
+								<Button btnType="large" className="mb-8">
 									Read more
-								</div>
+								</Button>
 							</div>
 						</div>
 					</div>

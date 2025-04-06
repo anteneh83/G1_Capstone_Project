@@ -1,6 +1,8 @@
+import Button from './Button'
+
 function PackageCard({ package: offeredPackage }) {
 	return (
-		<div className="space-y-4 w-[27.8rem] mb-6 bg-white shadow-lg rounded-[10px] pb-2">
+		<div className="space-y-4  max-w-[27.8rem] min-w-[13rem] mb-6 bg-white shadow-lg rounded-[10px] pb-2">
 			<img
 				src={offeredPackage.imgUrl}
 				className="w-full h-[319px] rounded-t-[10px] bg-stone-500"
@@ -16,11 +18,11 @@ function PackageCard({ package: offeredPackage }) {
 				<p className="text-[14px] text-[#555555] font-medium">
 					{offeredPackage.description}
 				</p>
-				<div className="flex justify-between">
-					<div className="text-[1.4rem]">⭐⭐⭐⭐⭐</div>
-					<div className="bg-black font-semibold text-[1.2rem] w-fit h-fit text-white rounded-[30px] py-2 px-4">
-						Discover more
+				<div className="flex justify-between  items-center">
+					<div className="xl:text-[1.1rem] xlm:text-[1.3rem]">
+						⭐⭐⭐⭐⭐
 					</div>
+					<Button btnType="medium">Booking Now</Button>
 				</div>
 			</div>
 		</div>
