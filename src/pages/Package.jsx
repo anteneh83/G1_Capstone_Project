@@ -119,7 +119,7 @@ const Package = () => {
 							<h2 className="font-semibold md:max-xl:text-4xl text-3xl xl:text-6xl">
 								Tips & Article
 							</h2>
-							<p className="max-w-[35rem] md:max-[914px]:max-w-[30rem] whitespace-break-spaces text-[#878787]">
+							<p className="text-[16px] xl:text-[18px] mb-3 sm:text-[16.8px] font-light md:leading-normal leading-8 text-[#343434]">
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit, sed do eiusmod tempor
 								incididunt ut labore et dolore magna
@@ -129,42 +129,41 @@ const Package = () => {
 						<Button btnType="medium">View more</Button>
 					</div>
 
-					<div className="grid xl:max-[83.5rem]:gap-8 xl:gap-14 gap-10 md:grid-cols-2  xl:grid-cols-[minmax(29rem,32.5rem)_minmax(39rem,1fr)] max-[1000px]:gap-x-0 xl:grid-rows-[repeat(2,514px)] md:grid-rows-[900px_380px] sm:grid-rows-[715px_repeat(2,340px)] grid-rows-[650px_repeat(2,360px)] grid-cols-1">
-						<div className="px-10 max-[1000px]:col-span-2 max-[1000px]:col-start-1 col md:max-xl:px-5 py-4 shadow-lg flex flex-col justify-between h-full">
+					<div className="grid xl:max-[83.5rem]:gap-8 xl:gap-14 gap-10 md:grid-cols-2  xl:grid-cols-[minmax(29rem,32.5rem)_minmax(39rem,1fr)] max-[1000px]:gap-x-0 xl:grid-rows-[repeat(2,514px)] md:grid-rows-[900px_400px] sm:grid-rows-[715px_repeat(2,330px)] grid-rows-[650px_repeat(2,340px)] grid-cols-1">
+						<div className="px-10 py-4 max-[1000px]:col-span-2 max-[1000px]:col-start-1 row-start-2 xl:row-start-1 shadow-lg flex flex-col justify-between h-full">
 							<div className="sm:space-y-0 space-y-2">
-								<p className="font-normal sm:leading-8 leading-normal md:leading-16 text-[16px] md:text-lg xl:text-2xl ">
+								<p className="font-normal sm:leading-13 leading-normal md:leading-16 text-[18px] md:text-lg xl:text-2xl ">
 									Perfect | Tips
 								</p>
-								<h3 className="font-medium md:text-[1.6rem] text-[1.1rem] sm:text-[1.6rem]  lg:text-[1.8rem] xl:text-[2.2rem] md:leading-12 sm:leading-8 leading-normal">
-									9 Popular Travel Destination on Sale in 2022
+								<h3 className="font-medium md:text-[1.6rem] text-[1.4rem] sm:text-[1.6rem]  lg:text-[1.8rem] xl:text-[2.2rem] md:leading-14 sm:leading-8 leading-normal">
+									9 Popular Travel Destintion on Sale in 2022
 									-
 								</h3>
-								<p className="text-[16px] xl:text-[18px] mb-3 sm:text-[16.8px] font-light md:leading-normal leading-8 text-[#343434]">
+								<p className="text-[16px] xl:text-[18px] mb-3 sm:text-[16.8px] font-light md:leading-10 sm:leading-8 leading-normal text-[#343434]">
 									Lorem ipsum dolor sit amet, consectetur
 									adipiscing elit, sed do eiusmod tempor
 									incididunt ut labore et dolore magna
 								</p>
 							</div>
-
 							<Button btnType="large" className="mb-8">
 								Read more
 							</Button>
 						</div>
-						<div className="px-10 py-4 max-[1000px]:col-span-2 max-[1000px]:col-start-1 row-start-2 shadow-lg flex flex-col justify-between h-full">
-							<div>
-								<p className="font-normal leading-16 text-2xl ">
+
+						<div className="px-10 py-4 max-[1000px]:col-span-2 max-[1000px]:col-start-1 rows-start-3 xl:row-start-2 shadow-lg flex flex-col justify-between h-full">
+							<div className="sm:space-y-0 space-y-2">
+								<p className="font-normal sm:leading-13 leading-normal md:leading-16 text-[18px] md:text-lg xl:text-2xl ">
 									Tips | Travel
 								</p>
-								<h3 className="font-medium  md:text-[2.2rem] leading-12">
+								<h3 className="font-medium md:text-[1.6rem] text-[1.4rem] sm:text-[1.6rem]  lg:text-[1.8rem] xl:text-[2.2rem] md:leading-14 sm:leading-8 leading-normal">
 									How Are We Going to Travel in 2022 -
 								</h3>
-								<p className="text-[18px] font-light leading-8 text-[#343434]">
+								<p className="text-[16px] xl:text-[18px] mb-3 sm:text-[16.8px] font-light md:leading-10 sm:leading-8 leading-normal text-[#343434]">
 									Lorem ipsum dolor sit amet, consectetur
 									adipiscing elit, sed do eiusmod tempor
 									incididunt ut labore et dolore magna
 								</p>
 							</div>
-
 							<Button btnType="large" className="mb-8">
 								Read more
 							</Button>
@@ -190,7 +189,6 @@ const Package = () => {
 										incididunt ut labore et dolore magna
 									</p>
 								</div>
-
 								<Button btnType="large" className="mb-8">
 									Read more
 								</Button>

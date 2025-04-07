@@ -15,7 +15,7 @@ function PackageCard({ package: offeredPackage }) {
 					</p>
 					<p className="text-2xl">{offeredPackage.price}</p>
 				</div>
-				<p className="text-[14px] text-[#555555] font-medium">
+				<p className="text-[15px] text-[#555555] font-medium">
 					{offeredPackage.description}
 				</p>
 				<div className="flex justify-between  items-center">
