@@ -5,7 +5,7 @@ function PackageCard({ package: offeredPackage }) {
 		<div className="space-y-4  max-w-[27.8rem] min-w-[13rem] mb-6 bg-white shadow-lg rounded-[10px] pb-2">
 			<img
 				src={offeredPackage.imgUrl}
-				className="w-full h-[319px] rounded-t-[10px] bg-stone-500"
+				className="w-full h-[319px] object-cover rounded-t-[10px] bg-stone-500"
 				alt=""
 			/>
 			<div className="px-6 space-y-4 pb-5">

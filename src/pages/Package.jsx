@@ -82,23 +82,21 @@ const Package = () => {
 					link={`package`}
 				/>
 			</section>
-			<main className="md:max-[54.6rem]:px-14 px-20 md:px-20 xl:px-20  min-[69.5rem]:px-14 py-32">
+			<main className="sm:px-8 md:max-[54.6rem]:px-14 px-5 md:px-20 xl:px-20  min-[69.5rem]:px-14 py-32">
 				<section>
-					<div className="flex items-center justify-between">
+					<div className="flex items-center text-center md:text-left md:flex-row flex-col justify-between">
 						<div className="flex gap-4 flex-col py-14">
-							<h2 className="font-semibold text-6xl">
+							<h2 className="font-semibold md:max-xl:text-4xl text-3xl sm:text-4xl xl:text-6xl">
 								Popular Destination
 							</h2>
-							<p className="w-[35rem] text-[#878787]">
+							<p className="max-w-[35rem] md:max-[914px]:max-w-[30rem] whitespace-break-spaces text-[#878787]">
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit, sed do eiusmod tempor
 								incididunt ut labore et dolore magna
 							</p>
 						</div>
 
-						<div className="bg-black w-fit h-fit text-white rounded-3xl py-2 px-4">
-							Discover more
-						</div>
+						<Button btnType="medium">Discover more</Button>
 					</div>
 
 					<div className="grid grid-cols-[repeat(1,_minmax(20rem,_27.8rem))] md:justify-between justify-center gap-5 md:grid-cols-[repeat(2,_minmax(20rem,_27.8rem))] min-[69.5rem]:grid-cols-[repeat(3,_minmax(20rem,_27.8rem))] py-14">
@@ -111,37 +109,37 @@ const Package = () => {
 					<img
 						src={planeImage}
 						alt=""
-						className="w-full pt-6 h-[542px]"
+						className="w-full pt-6 object-cover md:h-[400px] h-[300px] xl:h-[542px]"
 					/>
 				</div>
 
 				<section>
-					<div className="flex items-center justify-between">
+					<div className="flex items-center mb-8 md:mb-0 text-center md:text-left md:flex-row flex-col justify-between">
 						<div className="flex gap-4 flex-col py-14">
-							<h2 className="font-semibold text-6xl">
+							<h2 className="font-semibold md:max-xl:text-4xl text-3xl xl:text-6xl">
 								Tips & Article
 							</h2>
-							<p className="w-[35rem] text-[#878787]">
+							<p className="max-w-[35rem] md:max-[914px]:max-w-[30rem] whitespace-break-spaces text-[#878787]">
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit, sed do eiusmod tempor
 								incididunt ut labore et dolore magna
 							</p>
 						</div>
 
-						<Button btnType="large">View more</Button>
+						<Button btnType="medium">View more</Button>
 					</div>
 
-					<div className="grid gap-14 grid-cols-[522px_1fr] grid-rows-[repeat(2,514px)]">
-						<div className="px-10 py-4  shadow-lg flex flex-col justify-between h-full">
-							<div>
-								<p className="font-normal leading-16 text-2xl ">
+					<div className="grid xl:max-[83.5rem]:gap-8 xl:gap-14 gap-10 md:grid-cols-2  xl:grid-cols-[minmax(29rem,32.5rem)_minmax(39rem,1fr)] max-[1000px]:gap-x-0 xl:grid-rows-[repeat(2,514px)] md:grid-rows-[900px_380px] sm:grid-rows-[715px_repeat(2,340px)] grid-rows-[650px_repeat(2,360px)] grid-cols-1">
+						<div className="px-10 max-[1000px]:col-span-2 max-[1000px]:col-start-1 col md:max-xl:px-5 py-4 shadow-lg flex flex-col justify-between h-full">
+							<div className="sm:space-y-0 space-y-2">
+								<p className="font-normal sm:leading-8 leading-normal md:leading-16 text-[16px] md:text-lg xl:text-2xl ">
 									Perfect | Tips
 								</p>
-								<h3 className="font-medium text-[2.2rem] leading-12">
+								<h3 className="font-medium md:text-[1.6rem] text-[1.1rem] sm:text-[1.6rem]  lg:text-[1.8rem] xl:text-[2.2rem] md:leading-12 sm:leading-8 leading-normal">
 									9 Popular Travel Destination on Sale in 2022
 									-
 								</h3>
-								<p className="text-[18px] font-light leading-8 text-[#343434]">
+								<p className="text-[16px] xl:text-[18px] mb-3 sm:text-[16.8px] font-light md:leading-normal leading-8 text-[#343434]">
 									Lorem ipsum dolor sit amet, consectetur
 									adipiscing elit, sed do eiusmod tempor
 									incididunt ut labore et dolore magna
@@ -152,12 +150,12 @@ const Package = () => {
 								Read more
 							</Button>
 						</div>
-						<div className="px-10 py-4 row-start-2  shadow-lg flex flex-col justify-between h-full">
+						<div className="px-10 py-4 max-[1000px]:col-span-2 max-[1000px]:col-start-1 row-start-2 shadow-lg flex flex-col justify-between h-full">
 							<div>
 								<p className="font-normal leading-16 text-2xl ">
 									Tips | Travel
 								</p>
-								<h3 className="font-medium text-[2.2rem] leading-12">
+								<h3 className="font-medium  md:text-[2.2rem] leading-12">
 									How Are We Going to Travel in 2022 -
 								</h3>
 								<p className="text-[18px] font-light leading-8 text-[#343434]">
@@ -172,21 +170,21 @@ const Package = () => {
 							</Button>
 						</div>
 
-						<div className="row-start-1 shadow-lg rounded-xl bg-white row-end-3 col-start-2 grid gap-0 grid-rows-[auto_1fr]">
+						<div className="row-start-1 max-[580px]:max-h-[580px] md:max-xl:justify-self-center md:col-start-1 md:max-xl:col-end-3 shadow-lg rounded-xl bg-white xl:row-end-3 xl:col-start-2 grid gap-0 grid-rows-[auto_1fr]">
 							<img
-								className="h-[679px] w-full rounded-t-xl object-cover"
+								className="md:h-[520px] xl:h-[679px] w-full rounded-t-xl object-cover"
 								src={storyImage1}
 								alt=""
 							/>
-							<div className="px-10 py-4   flex flex-col  justify-between">
-								<div>
-									<p className="font-normal leading-16 text-2xl ">
+							<div className="px-10 py-4 flex flex-col  justify-between">
+								<div className="space-y-2 sm:space-y-0">
+									<p className="font-normal text-[1rem] sm:text-xl sm:leading-10 leading-normal md:leading-16 text-2xl ">
 										Tips | Travel
 									</p>
-									<h3 className="font-medium text-[2.2rem] leading-12">
+									<h3 className="font-medium text-[1.2rem] sm:text-[1.6rem] md:text-[2.2rem] sm:leading-9 leading-normal md:leading-12">
 										How Are We Going to Travel in 2022 -
 									</h3>
-									<p className="text-[18px] font-light leading-8 text-[#343434]">
+									<p className="md:text-[18px] sm:text-[16px] text-[15px] font-light sm:leading-6 leading-normal md:leading-8 text-[#343434]">
 										Lorem ipsum dolor sit amet, consectetur
 										adipiscing elit, sed do eiusmod tempor
 										incididunt ut labore et dolore magna
