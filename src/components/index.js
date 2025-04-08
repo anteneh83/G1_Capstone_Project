@@ -9,3 +9,5 @@ export { default as Button } from "./Button";
 export { default as Explore } from "./Explore";
 export { default as Card } from "./Card";
 export { default as Choose } from "./Choose";
+export {default as PackageCard} from './PackageCard'
+export {default as Testimonials} from './Testimonials'

@@ -6,33 +6,32 @@ import { IoCall } from "react-icons/io5";
 const ContactInfo = () => {
 	return (
 		<div className="grid md:grid-cols-2 gap-10 m-10 items-center">
-			<div className="shadow-md p-10  place-items-center ">
-				<form action="" className="flex flex-col gap-5">
-					<input
-						type="text"
-						placeholder="your name"
-						className="input input-md"
-					/>
-					<input
-						type="text"
-						placeholder="Your Email"
-						className="input input-md"
-					/>
-					<input
-						type="text"
-						placeholder="Subject"
-						className="input input-md"
-					/>
-
-					<textarea
-						placeholder="Your Message"
-						className="textarea textarea-md"
-					></textarea>
-					<button className="btn  bg-black text-white rounded-4xl">
-						subscribe
-					</button>
-				</form>
-			</div>
+			<div className="shadow-md p-10">
+                <form className="flex flex-col items-center max-w-md justify-center gap-5">
+                    <input
+                        type="text"
+                        placeholder="Your Name"
+                        className="input  w-full input-md p-3 border rounded-md"
+                    />
+                    <input
+                        type="email"
+                        placeholder="Your Email"
+                        className="input  w-full input-md p-3 border rounded-md"
+                    />
+                    <input
+                        type="text"
+                        placeholder="Subject"
+                        className="input w-full input-md p-3 border rounded-md"
+                    />
+                    <textarea
+                        placeholder="Your Message"
+                        className="textarea textarea-md  w-full p-3 border rounded-md"
+                    ></textarea>
+                    <button className="btn bg-black text-white rounded-3xl p-3">
+                        Send Message
+                    </button>
+                </form>
+            </div>
 			<div className="p-10">
 				<div>
 					<h1 className="text-4xl capitalize font-bold mb-4">get in touch</h1>

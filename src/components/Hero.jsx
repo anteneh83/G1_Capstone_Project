@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 const Hero = ({ className, children, title, link }) => {
-	if (link === "home" || title === "destination") return <>{children}</>;
+	if (link === "home" || title === "destination" || title === "single blog") return <>{children}</>;
 	return (
 		<div
 			className={`h-screen opacity-100 flex flex-col gap-6 ${className} justify-center `}
