@@ -4,7 +4,7 @@ const links = [
 	{ id: 2, url: "about", text: "About us" },
 	{ id: 3, url: "package", text: "package" },
 	{ id: 4, url: "destination", text: "destination" },
-	{ id: 5, url: "blog", text: "blog" },
+	{ id: 5, url: "singleBlog", text: "blog" },
 	{ id: 6, url: "contact", text: "contact" },
 ];
 
