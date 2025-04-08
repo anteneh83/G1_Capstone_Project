@@ -90,6 +90,7 @@ const Package = () => {
 								Popular Destination
 							</h2>
 							<p className="w-[35rem] text-[#878787]">
+
 								Lorem ipsum dolor sit amet, consectetur
 								adipiscing elit, sed do eiusmod tempor
 								incididunt ut labore et dolore magna
@@ -111,11 +112,13 @@ const Package = () => {
 					<img
 						src={planeImage}
 						alt=""
+
 						className="w-full pt-6 h-[542px]"
 					/>
 				</div>
 
 				<section>
+
 					<div className="flex items-center justify-between">
 						<div className="flex gap-4 flex-col py-14">
 							<h2 className="font-semibold text-6xl">
@@ -127,6 +130,7 @@ const Package = () => {
 								incididunt ut labore et dolore magna
 							</p>
 						</div>
+
 
 						<div className="bg-black w-fit h-fit text-white rounded-3xl py-2 px-4">
 							View more
@@ -144,6 +148,7 @@ const Package = () => {
 									-
 								</h3>
 								<p className="text-[18px] font-light leading-8 text-[#343434]">
+
 									Lorem ipsum dolor sit amet, consectetur
 									adipiscing elit, sed do eiusmod tempor
 									incididunt ut labore et dolore magna
