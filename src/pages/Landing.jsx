@@ -44,11 +44,11 @@ const Landing = () => {
 						</p>
 					</div>
 				</Hero>
+			</section>
 				<Explore/>
 				<Choose/>
 				<Testimonials/>
 				<Footer/>
-			</section>
 		</>
 	);
 };
