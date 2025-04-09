@@ -12,7 +12,7 @@ const Landing = () => {
 				
 
 				<Hero link="home">
-					<div className="h-screen opacity-100 flex flex-col gap-6 items-left justify-center pl-20">
+					<div className="h-screen opacity-100 flex flex-col gap-6 items-left justify-center pl-2 md:pl-20">
 						<h1 className="text-white text-5xl font-bold">
 							Make in <br />
 							your journey
@@ -21,7 +21,7 @@ const Landing = () => {
 							Explore the world with what you love beautiful{" "}
 							<br /> natural beauty.
 						</p>
-						<div className="bg-white w-lg h-12 flex rounded-4xl px-3 justify-between items-center">
+						<div className="bg-white w-full max-w-[500px] h-12 flex rounded-4xl px-3 justify-between items-center">
 							<select className="">
 								<option>Location</option>
 							</select>
@@ -38,7 +38,7 @@ const Landing = () => {
 						</div>
 						<p className="text-white">
 							Popular Place :{" "}
-							<span className="text-[#CFCFCF]">
+							<span className="text-[#6e1010]">
 								Bali, Istanbul, Rome, Paris.
 							</span>{" "}
 						</p>
