@@ -44,10 +44,10 @@ const About = () => {
 
 			  <div className="ml-10 mb-20 flex flex-row flex-wrap  gap-2  justify-around">
 				<div>
-					<img className="w-100 " src="src/assets/Aboutperson.png" alt="" />
+					<img className="w-100 mb-9  " src="src/assets/Aboutperson.png" alt="" />
 				</div>
-				<div  className=" flex flex-col  mb-4" >
-					<img className="w-15" src="src/assets/icon.png" alt="" />
+				<div  className=" flex flex-col  mb-4 ml-4" >
+					<img className="w-15 " src="src/assets/icon.png" alt="" />
 					<p className="text-sm w-130 mt-5 mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis ex autem aspernatur. Deleniti,
 					 libero, natus voluptatem mollitia alias rerum obcaecati, doloremque quia fugiat velit provident ipsum 
 					 porro veritatis. Dignissimos, aperiam.</p>
@@ -118,12 +118,12 @@ const About = () => {
 
     
 
-	  <div className="mb-20 ">
-		<p className="text-gray-400 text-center ">Gallary</p>
-		<h1 className="font-bold text-xl text-center">Unforgettable moment</h1>
+	  <div className="mb-8 ">
+		<p className="text-gray-400 text-2xl text-center ">Gallary</p>
+		<h1 className="font-bold text-4xl  text-center">Unforgettable moment</h1>
 		<div className="container mx-auto px-4 py-12">
   {/* Grid Layout */}
-  <div className="grid grid-cols-1 md:grid-cols-3  gap-4  ">
+  <div className="grid grid-cols-1 md:grid-cols-3  gap-4 ml-7  ">
     {/* Large Left Image (Bali) - spans 2 rows */}
     <div className=" md:row-span-2 relative group overflow-hidden rounded-xl">
       <img 
@@ -146,13 +146,13 @@ const About = () => {
     </div>
 
     {/* Bottom Right (Paris + Italy) */}
-    <div className=" grid grid-cols-2 gap-6">
+    <div className=" grid grid-cols-2 gap-6 ">
       {/* Paris */}
       <div className="relative group overflow-hidden rounded-xl ">
         <img 
           src="src/assets/AboutParis.png" 
           alt="Paris Destination" 
-          className=" h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          className=" h-full w-100 object-cover transition-transform duration-500 group-hover:scale-105"
         />
         
       </div>
@@ -162,7 +162,7 @@ const About = () => {
         <img 
           src="src/assets/AboutItaly.png" 
           alt="Italy Destination" 
-          className=" h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          className=" h-full w-100 object-cover transition-transform duration-500 group-hover:scale-105"
         />
         
       </div>
