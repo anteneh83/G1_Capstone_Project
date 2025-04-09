@@ -49,34 +49,7 @@ const About = () => {
           </p>
         </div>
       </div>
-{/* 
-			  <div className="ml-5 mr-5 mb-20 flex flex-wrap  justify-center">
-				<div>
-          <img className="w-100 mb-10 mr-20 " src="src/assets/Aboutperson.png" alt="" />
-				</div>
 
-
-				<div  className="grid grid-cols-2  mb-4 ml-3" >
-					
-    <div className="ml-10">
-
-					<img className="w-15" src="src/assets/icon.png" alt="" />
-					<p className="text-sm w-2/3 mt-5 mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis ex autem aspernatur. Deleniti,
-					 libero, natus voluptatem mollitia alias rerum obcaecati, doloremque quia fugiat velit provident ipsum 
-					 porro veritatis. Dignissimosperiam.</p>
-
-          <p className="text-sm  w-2/3 mb-5 ">
-            Mauris tempor tellus ante, ut fermentum erat gravida vel.Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra,per
-            inceptos himenaeos. Aenean nec justo dui.Ut et consequat dui ,a
-            malesuada ipsum. Pellentesque nec turpis viverra,blandit mi a,
-            accumsan justo.
-          </p>
-          <h1 className="font-bold text-xl mb-0 ">Siti Sarah</h1>
-          <p className="text-gray-400 text-sm pt-0 mt-0">Founder Travosca</p>
-    </div>
-        </div>
-      </div> */}
            <div className="ml-5 mr-5 mb-20 flex flex-wrap justify-center">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 
@@ -111,28 +84,28 @@ const About = () => {
 
 
       <div className="mb-20 bg-[url('/src/assets/About2.png')] bg-cover bg-center h-100 flex justify-center items-center">
-        <div className=" grid grid-cols-2 md:grid-cols-4 gap-15 ">
+        <div className=" grid grid-cols-2 md:grid-cols-4 gap-25 ">
 
             <img
-              className="w-30  mb-4"
+              className="w-45  mb-4"
               src="/src/assets/Abouticon1.png"
               alt="Satisfied Clients"
             />
 
             <img
-              className="w-30  mb-4"
+              className="w-45  mb-4"
               src="/src/assets/Abouticon2.png"
               alt="New Travellers"
             />
 
             <img
-              className="w-30   mb-4"
+              className="w-45   mb-4"
               src="/src/assets/Abouticon3.png"
               alt="Destinations"
             />
 
             <img
-              className="w-30  mb-4"
+              className="w-45  mb-4"
               src="/src/assets/Abouticon4.png"
               alt="Awards"
             />
