@@ -17,7 +17,7 @@ const About = () => {
 			<div className="flex mt-20 ml-5 mb-20 justify-around flex-wrap gap-y-10 ">
 				<div className="flex flex-col justify-center items-center ml-1 text-center max-w-xs">
 				<img className="w-16 mb-4 " src="src/assets/great.png" alt="Great team work" />
-				 <h1 className="font-bold text-2xl mt-3 mb-2">Great team work</h1>
+				 
 				 <p className="text-sm w-80 text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.
 				 Ipsa amet animi corporis inventore porro eveniet quod nobis illum 
 				 iure facilis. Reiciendis voluptatum cumque distinctio nemo beatae dolore non, 
@@ -119,7 +119,6 @@ const About = () => {
     
 
 	  <div className="mb-20 ">
-		<p className="text-gray-400 text-center ">Gallary</p>
 		<h1 className="font-bold text-xl text-center">Unforgettable moment</h1>
 		<div className="container mx-auto px-4 py-12">
   {/* Grid Layout */}
