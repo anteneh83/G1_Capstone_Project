@@ -52,13 +52,15 @@ const About = () => {
 
 			  <div className="ml-10 mb-20 flex flex-row flex-wrap  gap-2  justify-around">
 				<div>
-					<img className="w-100 " src="src/assets/Aboutperson.png" alt="" />
 				</div>
-				<div  className=" flex flex-col  mb-4" >
+				<div  className="grid grid-cols-2  mb-4" >
+					<img className="w-100 " src="src/assets/Aboutperson.png" alt="" />
+    <div>
+
 					<img className="w-15" src="src/assets/icon.png" alt="" />
-					<p className="text-sm w-130 mt-5 mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis ex autem aspernatur. Deleniti,
+					<p className="text-sm mt-5 mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis ex autem aspernatur. Deleniti,
 					 libero, natus voluptatem mollitia alias rerum obcaecati, doloremque quia fugiat velit provident ipsum 
-					 porro veritatis. Dignissimos, aperiam.</p>
+					 porro veritatis. Dignissimosperiam.</p>
 
           <p className="text-sm  mb-5 ">
             Mauris tempor tellus ante, ut fermentum erat gravida vel.Class
@@ -69,6 +71,7 @@ const About = () => {
           </p>
           <h1 className="font-bold text-xl mb-0 ">Siti Sarah</h1>
           <p className="text-gray-400 text-sm pt-0 mt-0">Founder Travosca</p>
+    </div>
         </div>
       </div>
 
