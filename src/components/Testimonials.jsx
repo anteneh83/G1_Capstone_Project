@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight, FaStar } from "react-icons/fa";
 
 const testimonials = [
   {
@@ -47,114 +46,53 @@ const testimonials = [
 ];
 
 export default function Testimonials() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  // Show 3 testimonials at a time
-  const testimonialsToShow = testimonials.slice(currentIndex, currentIndex + 3);
-
-  const prevTestimonial = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? testimonials.length - 3 : prevIndex - 3
-    );
-  };
-
-  const nextTestimonial = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === testimonials.length - 3 ? 0 : prevIndex + 3
-    );
-  };
-
   return (
-    <section className="bg-white py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
-        {/* Header */}
-        <div className="flex justify-between items-center mb-12">
-          {/* Left-aligned Text */}
-          <div className="text-left">
-            <h4 className="text-gray-500 tracking-widest text-sm uppercase">
-              TESTIMONIAL
-            </h4>
-            <h2 className="text-3xl font-bold mt-2">What our client say</h2>
-            <p className="text-gray-500 mt-1">
-              Create a visual identity for your company and an overall brand
-            </p>
-          </div>
+    <section className="relative my-10">
+      <div className="text-left p-4">
+        <h4 className="text-gray-500 tracking-widest text-sm uppercase">
+          TESTIMONIAL
+        </h4>
+        <h2 className="text-3xl font-bold mt-2">What our client say</h2>
+        <p className="text-gray-500 mt-1">
+          Create a visual identity for your company and an overall brand
+        </p>
+      </div>
 
-          {/* Navigation Arrows */}
-          <div className="flex space-x-4">
-            <button
-              onClick={prevTestimonial}
-              className="p-2 bg-gray-100 rounded-full hover:bg-gray-200"
-            >
-              <FaChevronLeft className="w-5 h-5" />
-            </button>
-
-            <button
-              onClick={nextTestimonial}
-              className="p-2 bg-gray-100 rounded-full hover:bg-gray-200"
-            >
-              <FaChevronRight className="w-5 h-5" />
-            </button>
-          </div>
-        </div>
-
-        {/* Testimonial Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {testimonialsToShow.map((testimonial, index) => (
-            <div
-              key={index}
-              className="relative bg-white p-6 border border-gray-200 rounded-lg mx-auto"
-            >
-              {/* Profile Image - Top Center */}
-              <div className="absolute -top-10 left-1/2 transform -translate-x-1/2">
-                <div className="w-20 h-20 rounded-full bg-gray-200 border-4 border-white flex items-center justify-center shadow-md">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-full h-full object-cover rounded-full"
-                  />
-                </div>
+      <div className="carousel w-full md:flex md:space-x-4 md:carousel-none bg-gray-200 m-4 py-3">
+        {testimonials.map((testimony, index) => (
+          <div
+            id={`slide${index + 1}`}
+            className="carousel-item relative w-full flex justify-center md:w-1/3"
+          >
+            <div className="bg-white  shadow-md rounded-lg p-5 pr-8  ">
+              <div className="flex flex-col justify-center items-center mb-4">
+                <img
+                  src={testimony.image}
+                  alt=""
+                  className="w-[60px] h-[60px] rounded-full mb-3"
+                />
+                <p>{testimony.name}</p>
+                <p>{testimony.company}</p>
               </div>
-
-              {/* Content */}
-              <div className="pt-14">
-                <div className="flex justify-between items-center mb-4">
-                  <div className="text-center w-full">
-                    <h3 className="font-medium text-gray-900">
-                      {testimonial.name || "Anonymous"}
-                    </h3>
-                    {testimonial.company && (
-                      <p className="text-gray-500 text-sm">
-                        {testimonial.company}
-                      </p>
-                    )}
-                  </div>
+              <div className="flex flex-col gap-2">
+                <div className="flex justify-center gap-1 text-yellow-400">
+                  {Array.from({ length: testimony.stars }, (_, i) => (
+                    <FaStar key={i} />
+                  ))}
                 </div>
-
-                <div className="flex justify-center mb-4">
-                  {Array(5)
-                    .fill()
-                    .map((_, i) => (
-                      <span
-                        key={i}
-                        className={
-                          i < testimonial.stars
-                            ? "text-yellow-400 text-lg"
-                            : "text-gray-300 text-lg"
-                        }
-                      >
-                        ★
-                      </span>
-                    ))}
-                </div>
-
-                <p className="text-gray-600 text-center">
-                  "{testimonial.text}"
-                </p>
+                <p className="text-center">{testimony.text}</p>
               </div>
             </div>
-          ))}
-        </div>
+            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between md:hidden">
+              <a href={`#slide${index === 0 ? testimonials.length: index}`}  className="btn btn-circle">
+              <FaChevronLeft />
+              </a>
+              <a href={`#slide${index === testimonials.length - 1 ? 1 : index + 2}`} className="btn btn-circle">
+              <FaChevronRight />
+              </a>
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );

@@ -1,9 +1,9 @@
 function PackageCard({ package: offeredPackage }) {
 	return (
-		<div className="space-y-4 w-[27.8rem] mb-6 bg-white shadow-lg rounded-[10px] pb-2">
+		<div className="space-y-4 max-w-[1/3] mb-6 bg-white shadow-lg rounded-[10px] pb-2">
 			<img
 				src={offeredPackage.imgUrl}
-				className="w-full h-[319px] rounded-t-[10px] bg-stone-500"
+				className="w-full h-[200px] rounded-t-[10px] bg-stone-500"
 				alt=""
 			/>
 			<div className="px-6 space-y-4 pb-5">
