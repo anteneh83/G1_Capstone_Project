@@ -28,20 +28,24 @@ export default function BookingList() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
   const handleSubmit = async (e) => {
-    e.preventDefault()
-    await createBookings(formData)
-    setFormData({destination: "", date: "", status: "Pending"})
-    alert('Booking created')
+    e.preventDefault();
+    await createBookings(formData);
+    const updatedBookings = await getBookings()
+    setBookings(updatedBookings)
+
+    setFormData({ destination: "", date: "", status: "Pending" });
+    document.getElementById("my_modal_3").close();
+    alert("Booking created successfully!");
   };
 
   return (
     <section className="my-10 max-w-[1200px] mx-auto p-4">
       <h2 className="text-3xl font-bold mb-6">Your Bookings</h2>
       <button
-        className="btn"
+        className="btn m-4 bg-green-300"
         onClick={() => document.getElementById("my_modal_3").showModal()}
       >
-        Add Booking
+        Add New Booking
       </button>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {loading ? (
@@ -66,8 +70,9 @@ export default function BookingList() {
       <dialog id="my_modal_3" className="modal">
         <div className="modal-box">
           <section className="my-10 max-w-[1200px] mx-auto p-4">
-            <h2 className="text-3xl font-bold mb-6">Create a Booking</h2>
-            <form  onSubmit={handleSubmit} className="space-y-4">
+            <h2 className="text-3xl font-bold mb-4">Create a Booking</h2>
+
+            <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label className="block text-lg font-medium text-gray-800">
                   Destination
@@ -94,12 +99,21 @@ export default function BookingList() {
                   required
                 />
               </div>
-              <button
-                type="submit"
-                className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600"
-              >
-                Book Now
-              </button>
+              <div className="flex justify-end space-x-4">
+                <button
+                  type="button"
+                  onClick={() => document.getElementById("my_modal_3").close()}
+                  className="bg-gray-300 text-gray-800 px-6 py-3 rounded-lg hover:bg-gray-400"
+                >
+                  Close
+                </button>
+                <button
+                  type="submit"
+                  className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600"
+                >
+                  Book Now
+                </button>
+              </div>
             </form>
           </section>
         </div>

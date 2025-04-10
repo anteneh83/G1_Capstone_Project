@@ -7,7 +7,8 @@ import {
   SingleBlog,
   Error,
   Landing,
-  BookingList
+  BookingList,
+  DestinationList
 } from "./pages";
 
 const router = createBrowserRouter([
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "bookings",
         element: <BookingList />,
+      },
+      {
+        path: "destinations",
+        element: <DestinationList />,
       },
       // Add this catch-all route for 404s
       {
