@@ -1,47 +1,67 @@
-import React from "react";
+import React from 'react'
 
-import { Footer, Header, Hero, Explore,Choose, Testimonials } from "../components";
-import header from "../assets/header.png";
-import { Link } from "react-router-dom";
+import {
+	Footer,
+	Header,
+	Hero,
+	Explore,
+	Choose,
+	Testimonials,
+	Button,
+} from '../components'
+import header from '../assets/header.png'
+import { Link, useNavigate } from 'react-router-dom'
 const Landing = () => {
+	const navigate = useNavigate()
+
 	return (
 		<>
 			<section
 				className="bg-cover bg-center  h-screen"
 				style={{ backgroundImage: `url(${header})` }}
 			>
-				
-
 				<Hero link="home">
-					<div className="h-screen opacity-100 flex flex-col gap-6 items-left justify-center pl-2 md:pl-20">
-						<h1 className="text-white text-5xl font-bold">
+					<div className="h-screen space-y-2 pt-40 opacity-100 flex flex-col gap-6 items-left justify-center px-28 ">
+						<h1 className="text-white w-[614px] leading-28 text-[90px] font-bold">
 							Make in <br />
 							your journey
 						</h1>
-						<p className="text-white opacity-80">
-							Explore the world with what you love beautiful{" "}
+						<p className="text-[#CFCFCF] text-lg opacity-80">
+							Explore the world with what you love beautiful
 							<br /> natural beauty.
 						</p>
-						
-							<Link to={'destinations'} className="bg-black text-white rounded-2xl py-1 px-4 w-fit">
-								Explore now
-							</Link>
-						
-						<p className="text-white">
-							Popular Place :{" "}
-							<span className="text-[#6e1010]">
-								Bali, Istanbul, Rome, Paris.
-							</span>{" "}
+
+						<div className="flex text-lg text-[#9B9B9B] w-[650px] justify-between items-center bg-white px-5 py-3 rounded-full">
+							<p>Location ^</p>
+							<p>Date ^</p>
+							<p>People ^</p>
+
+							<Button
+								onClick={(e) => {
+									e.preventDefault()
+									navigate('destinations')
+								}}
+								btnType="medium"
+							>
+								Explore
+							</Button>
+						</div>
+
+						<p className="text-[#CFCFCF] text-lg">
+							<span className="text-white font-semibold">
+								Popular Place :
+							</span>{' '}
+							Bali, Istanbul, Rome, Paris.
 						</p>
 					</div>
 				</Hero>
 			</section>
-				<Explore/>
-				<Choose/>
-				<Testimonials/>
-				<Footer/>
+			<Explore />
+			<Choose />
+			<Testimonials />
+			<Footer />
 		</>
-	);
-};
+	)
+}
 
-export default Landing;
+export default Landing
