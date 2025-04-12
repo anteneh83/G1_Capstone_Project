@@ -7,7 +7,7 @@ const Card = ({ card, onClick, active = false }) => {
 		<div
 			data-card-id={card.id}
 			onClick={(e) => onClick(e)}
-			className={` w-[444px] h-fit cursor-pointer rounded-lg bg-base-100 shadow-lg`}
+			className={` w-full  sm:w-full md:w-[48%] lg:min-[1086px]:max-w-[31.5%] xl:max-2xl:w-[444px]  h-fit cursor-pointer rounded-lg bg-base-100 shadow-lg`}
 		>
 			<figure>
 				<img
