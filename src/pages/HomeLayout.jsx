@@ -5,6 +5,7 @@ const HomeLayout = () => {
 		<>
 			<Navbar />
 			<Outlet />
+			
 		</>
 	);
 };
