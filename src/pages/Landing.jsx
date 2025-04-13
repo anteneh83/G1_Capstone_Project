@@ -1,17 +1,26 @@
-import React from "react";
+import React from 'react'
 
-import { Footer, Header, Hero, Explore,Choose, Testimonials } from "../components";
-import header from "../assets/header.png";
-import { Link } from "react-router-dom";
+import {
+	Footer,
+	Header,
+	Hero,
+	Explore,
+	Choose,
+	Testimonials,
+	Button,
+} from '../components'
+import header from '../assets/header.png'
+import { Link, useNavigate } from 'react-router-dom'
+import Partners from '../components/Partners'
 const Landing = () => {
+	const navigate = useNavigate()
+
 	return (
 		<>
 			<section
 				className="bg-cover bg-center  "
 				style={{ backgroundImage: `url(${header})` }}
 			>
-				
-
 				<Hero link="home">
 					<div className="h-screen flex flex-col gap-6 items-left justify-center pl-2 md:pl-20">
 						<h1 className="  text-white text-8xl font-bold">
@@ -36,12 +45,13 @@ const Landing = () => {
 					</div>
 				</Hero>
 			</section>
-				<Explore/>
-				<Choose/>
-				<Testimonials/>
-				<Footer/>
+			<Explore />
+			<Choose />
+			<Partners />
+			<Testimonials />
+			<Footer />
 		</>
-	);
-};
+	)
+}
 
-export default Landing;
+export default Landing
