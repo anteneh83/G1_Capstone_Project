@@ -8,6 +8,7 @@ const HomeLayout = () => {
 			<Navbar />
 			<ScrollToTop /> {/* ✅ Add this here */}
 			<Outlet />
+			
 		</>
 	);
 };

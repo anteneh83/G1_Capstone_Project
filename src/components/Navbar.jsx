@@ -26,6 +26,7 @@ const Navbar = () => {
 						</ul>
 					</div>
 					<div className="hidden lg:flex">
+						
 						<ul className="menu md:gap-4 xl:gap-10 lg:gap-4 menu-horizontal">
 							<NavLinks />
 						</ul>
