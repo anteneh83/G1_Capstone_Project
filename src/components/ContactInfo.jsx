@@ -27,7 +27,7 @@ const ContactInfo = () => {
                         placeholder="Your Message"
                         className="textarea textarea-md  w-full p-3 border rounded-md"
                     ></textarea>
-                    <button className="btn bg-black text-white rounded-3xl p-3">
+                    <button className="btn bg-black w-full text-white rounded-3xl p-3">
                         Send Message
                     </button>
                 </form>
