@@ -47,24 +47,24 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="relative my-10">
+    <section className="relative  ml-20 my-10">
       <div className="text-left p-4">
-        <h4 className="text-gray-500 tracking-widest text-sm uppercase">
+        <h4 className="text-gray-500 tracking-widest text-bold text-3xl uppercase">
           TESTIMONIAL
         </h4>
-        <h2 className="text-3xl font-bold mt-2">What our client say</h2>
+        <h2 className="text-5xl font-bold mt-2">What our client say</h2>
         <p className="text-gray-500 mt-1">
           Create a visual identity for your company and an overall brand
         </p>
       </div>
 
-      <div className="carousel w-full md:flex md:space-x-4 md:carousel-none bg-gray-200 m-4 py-3">
+      <div className="carousel w-full md:flex md:space-x-4 md:carousel-none bg-white m-4 py-3">
         {testimonials.map((testimony, index) => (
           <div
             id={`slide${index + 1}`}
             className="carousel-item relative w-full flex justify-center md:w-1/3"
           >
-            <div className="bg-white  shadow-md rounded-lg p-5 pr-8  ">
+            <div className="bg-white  h-90 max-w-xs mx-auto shadow-md rounded-lg p-5 pr-6  ">
               <div className="flex flex-col justify-center items-center mb-4">
                 <img
                   src={testimony.image}
