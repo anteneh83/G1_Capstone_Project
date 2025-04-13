@@ -1,3 +1,4 @@
+
 import taiwanImage from "../assets/taiwan.png";
 import thailandImage from "../assets/thailand.png";
 import singaporeImage from "../assets/singapore.png";
@@ -6,7 +7,6 @@ import indonesiImage from "../assets/indonesi.png";
 import swissImage from "../assets/swiss.png";
 import planeImage from "../assets/package-plane.png";
 import storyImage1 from "../assets/package-story-1.png/";
-
 import header from '../assets/package-hero.png'
 import { Navbar, Footer, Hero, Button } from '../components'
 import PackageCard from '../components/PackageCard'

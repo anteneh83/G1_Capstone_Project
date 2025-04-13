@@ -1,47 +1,57 @@
-import React from "react";
+import React from 'react'
 
-import { Footer, Header, Hero, Explore,Choose, Testimonials } from "../components";
-import header from "../assets/header.png";
-import { Link } from "react-router-dom";
+import {
+	Footer,
+	Header,
+	Hero,
+	Explore,
+	Choose,
+	Testimonials,
+	Button,
+} from '../components'
+import header from '../assets/header.png'
+import { Link, useNavigate } from 'react-router-dom'
+import Partners from '../components/Partners'
 const Landing = () => {
+	const navigate = useNavigate()
+
 	return (
 		<>
 			<section
-				className="bg-cover bg-center  h-screen"
+				className="bg-cover bg-center  "
 				style={{ backgroundImage: `url(${header})` }}
 			>
-				
-
 				<Hero link="home">
-					<div className="h-screen opacity-100 flex flex-col gap-6 items-left justify-center pl-2 md:pl-20">
-						<h1 className="text-white text-5xl font-bold">
+					<div className="h-screen flex flex-col gap-6 items-left justify-center pl-2 md:pl-20">
+						<h1 className="  text-white text-8xl font-bold">
 							Make in <br />
 							your journey
 						</h1>
-						<p className="text-white opacity-80">
+						<p className=" text-white opacity-80">
 							Explore the world with what you love beautiful{" "}
 							<br /> natural beauty.
 						</p>
 						
-							<Link to={'destinations'} className="bg-black text-white rounded-2xl py-1 px-4 w-fit">
+							<Link to={'destinations'} className="  bg-black text-white rounded-2xl py-1 px-4 w-fit">
 								Explore now
 							</Link>
 						
-						<p className="text-white">
+						<p className="  text-white text-bold text-2xl ">
 							Popular Place :{" "}
-							<span className="text-[#6e1010]">
+							<span className="">
 								Bali, Istanbul, Rome, Paris.
 							</span>{" "}
 						</p>
 					</div>
 				</Hero>
 			</section>
-				<Explore/>
-				<Choose/>
-				<Testimonials/>
-				<Footer/>
+			<Explore />
+			<Choose />
+			<Partners />
+			<Testimonials />
+			<Footer />
 		</>
-	);
-};
+	)
+}
 
-export default Landing;
+export default Landing
