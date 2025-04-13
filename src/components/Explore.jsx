@@ -50,22 +50,25 @@ const Explore = () => {
 	}
 
 	return (
-		<section className="m-10">
-			<div>
-				<div className="text-center">
-					<h1 className="text-4xl font-bold tracking-wide ">
-						Explore new worlds with <br /> exotic natural scenary
-					</h1>
-					<p className="text-gray-400 text-xl my-5">
+		<section className="lg:px-20 md:px-10 px-5 py-20">
+			<div className="text-center">
+				<h2 className="font-semibold md:max-xl:text-4xl text-3xl sm:text-4xl xl:text-6xl">
+					Explore new worlds with <br /> exotic natural scenary
+				</h2>
+				<div className="flex w-full justify-between pb-16 h-fit items-start pt-8">
+					<Indicator
+						imageUrl={'/icons/left_indicator.svg'}
+						onClick={(e) => handleCardChange(e, 'minus')}
+					/>
+
+					<p className="opacity-50 text-xl px-3">
 						Explore the world with what you love beautiful natural
 						beauty.
 					</p>
-				</div>
-				<div className="flex gap-4 align-top justify-around">
-                    <Card card={card2}/>
-					<Card card={card1} title='Bali, Indonesia.' text='Bali is a beautiful tourist spot and is visited by many travelers.' />
-                    <Card card={card3}/>
-
+					<Indicator
+						imageUrl={'/icons/right_indicator.svg'}
+						onClick={(e) => handleCardChange(e, 'add')}
+					/>
 				</div>
 			</div>
 			<div className="flex flex-wrap align-top gap-5 justify-center md:justify-between">
@@ -82,5 +85,4 @@ const Explore = () => {
 	)
 }
 
-export default Explore;
-
+export default Explore
