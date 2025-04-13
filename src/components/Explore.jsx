@@ -61,12 +61,7 @@ const Explore = () => {
 						beauty.
 					</p>
 				</div>
-				<div className="flex gap-4 align-top justify-around">
-                    <Card card={card2}/>
-					<Card card={card1} title='Bali, Indonesia.' text='Bali is a beautiful tourist spot and is visited by many travelers.' />
-                    <Card card={card3}/>
-
-				</div>
+				
 			</div>
 			<div className="flex flex-wrap align-top gap-5 justify-center md:justify-between">
 				{cardInfo.map((card) => (
