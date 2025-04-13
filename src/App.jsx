@@ -9,8 +9,9 @@ import {
   Error,
   Landing,
   BookingList,
-  DestinationList
+  DestinationList,
 } from "./pages";
+import ServicesPage from "./components/ServicesPage"; 
 
 
 const router = createBrowserRouter([
@@ -47,6 +48,11 @@ const router = createBrowserRouter([
         path: "destinations",
         element: <DestinationList />,
       },
+      {
+        path: "services", 
+        element: <ServicesPage />, 
+      },
+      
       {
         path: "*",
         element: <Error />,

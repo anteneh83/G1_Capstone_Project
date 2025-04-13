@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; 
 import header from "../assets/choose.png";
 import { FaArrowRightLong } from "react-icons/fa6";
 import bestService from "../assets/best-service.svg";
@@ -6,7 +7,6 @@ import bestService from "../assets/best-service.svg";
 const Choose = () => {
   return (
     <section className="relative">
-      {/* Background Image as Full Screen */}
       <div className="w-full h-[100vh] overflow-hidden">
         <img
           src={header}
@@ -15,7 +15,6 @@ const Choose = () => {
         />
       </div>
 
-      {/* Absolute Positioned Content on top of image */}
       <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-full px-6">
         <div className="flex flex-col items-center text-center text-white pt-70">
           <h1 className="text-5xl font-bold mb-4">Why choose us?</h1>
@@ -24,7 +23,6 @@ const Choose = () => {
           </p>
         </div>
 
-        {/* Cards: partially overlay and then go beyond image height */}
         <div className="flex flex-col items-center gap-10 md:flex-row md:justify-center md:gap-12 mb-40">
           {[1, 2, 3].map((_, index) => (
             <div
@@ -42,8 +40,12 @@ const Choose = () => {
               <p className="text-[#858585] mb-6 text-center">
                 Our service is reliable and convenient. Our service is quality.
               </p>
-              <p className="flex items-center justify-center font-bold text-md">
-                Learn more <FaArrowRightLong className="ml-2 mt-[2px]" />
+
+              {/* ✅ Interactive and styled link */}
+              <p className="flex items-center justify-center font-bold text-md text-blue-600 hover:underline">
+                <Link to="/services" className="flex items-center">
+                  Learn more <FaArrowRightLong className="ml-2 mt-[2px]" />
+                </Link>
               </p>
             </div>
           ))}
