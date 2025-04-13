@@ -50,18 +50,18 @@ const Explore = () => {
 	}
 
 	return (
-		<section className="px-20 py-20">
+		<section className="lg:px-20 md:px-10 px-5 py-20">
 			<div className="text-center">
-				<h1 className="text-6xl font-semibold tracking-wide ">
+				<h2 className="font-semibold md:max-xl:text-4xl text-3xl sm:text-4xl xl:text-6xl">
 					Explore new worlds with <br /> exotic natural scenary
-				</h1>
+				</h2>
 				<div className="flex w-full justify-between pb-16 h-fit items-start pt-8">
 					<Indicator
 						imageUrl={'/icons/left_indicator.svg'}
 						onClick={(e) => handleCardChange(e, 'minus')}
 					/>
 
-					<p className="opacity-50 text-xl">
+					<p className="opacity-50 text-xl px-3">
 						Explore the world with what you love beautiful natural
 						beauty.
 					</p>
