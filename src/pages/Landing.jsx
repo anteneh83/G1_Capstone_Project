@@ -23,7 +23,7 @@ const Landing = () => {
 			>
 				<Hero link="home">
 					<div className=" space-y-2 md:pt-30 pt-20 lg:min-[1100px]:pt-40 opacity-100 flex flex-col gap-6 items-left justify-center px-5 md:px-16 md:max-[1100px]:px-28">
-						<h1 className="text-white w-fit leading-16 text-[55px] lg:leading-20 lg:min-[1100px]:leading-28 lg:text-[65px]  lg:min-[1100px]:text-[90px] font-bold">
+						<h1 className="text-white w-fit leading-12 text-[40px] md:leading-16 md:text-[55px] lg:leading-20 lg:min-[1100px]:leading-28 lg:text-[65px]  lg:min-[1100px]:text-[90px] font-bold">
 							Make in <br />
 							your journey
 						</h1>
@@ -32,11 +32,16 @@ const Landing = () => {
 							<br /> natural beauty.
 						</p>
 
-						<div className="flex text-lg gap-2  max-[665px]:text-[16px] max-[665px]:justify-around text-[#9B9B9B] max-w-[650px] min-[665px]:justify-between items-center bg-white px-5 py-3 rounded-full">
-							<p>Location ^</p>
-							<p>Date ^</p>
-							<p>People ^</p>
-
+						<div className="flex flex-col w-fit sm:flex-row items-center bg-none sm:bg-white rounded-full shadow-md px-2 py-2 gap-2 sm:gap-4">
+							<select className="sm:w-auto text-white sm:text-gray-700 bg-transparent px-2 py-2 outline-none">
+								<option>Location</option>
+							</select>
+							<select className="sm:w-auto text-white sm:text-gray-700 bg-transparent px-2 py-2 outline-none">
+								<option>Date</option>
+							</select>
+							<select className="sm:w-auto text-white sm:text-gray-700 bg-transparent px-2 py-2 outline-none">
+								<option>People</option>
+							</select>
 							<Button
 								onClick={(e) => {
 									e.preventDefault()
