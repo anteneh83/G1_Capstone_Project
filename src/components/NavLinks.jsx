@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import dropdownIcon from "../assets/dropdown-icon.svg";
 import searchIcon from "../assets/search-icon.svg";
+import SearchBar from "./SearchBar"; // Import the new SearchBar component
 
 const links = [
 	{ id: 1, url: "/", text: "home" },
@@ -32,13 +33,8 @@ const NavLinks = () => {
 				);
 			})}
 			{/* Search Bar at the End */}
-			<li className="flex items-center ml-10">
-				<input
-					type="text"
-					placeholder="Search..."
-					className="border rounded-full py-1 px-4 text-black"
-				/>
-				<img src={searchIcon} alt="search" className="w-5 h-5 ml-2" />
+			<li className="ml-10">
+				<SearchBar />
 			</li>
 		</>
 	);

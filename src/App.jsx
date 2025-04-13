@@ -1,4 +1,5 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import ScrollToTop from './components/ScrollToTop';  
 import {
   HomeLayout,
   Contact,
@@ -10,6 +11,7 @@ import {
   BookingList,
   DestinationList
 } from "./pages";
+
 
 const router = createBrowserRouter([
   {
@@ -45,7 +47,6 @@ const router = createBrowserRouter([
         path: "destinations",
         element: <DestinationList />,
       },
-      // Add this catch-all route for 404s
       {
         path: "*",
         element: <Error />,
@@ -55,7 +56,11 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
-  return <RouterProvider router={router}/>
+  return (
+    <RouterProvider router={router}>
+      <ScrollToTop />
+    </RouterProvider>
+  );
 };
 
 export default App;
