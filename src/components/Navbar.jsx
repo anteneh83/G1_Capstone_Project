@@ -9,7 +9,7 @@ const Navbar = () => {
 		<nav className="bg-[#120B0B82] fixed w-screen glass z-1000">
 			<div className="px-10">
 				<div className="flex justify-between items-center">
-					{/* TITLE */}
+					
 					<NavLink to="/" className="">
 						<img className="" src={logo1} alt="logo" />
 					</NavLink>
