@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import dropdownIcon from "../assets/dropdown-icon.svg";
-import searchIcon from "../assets/search-icon.svg";
-import SearchBar from "./SearchBar"; // Import the new SearchBar component
+
+import SearchBar from "./SearchBar"; 
 
 const links = [
 	{ id: 1, url: "/", text: "home" },
@@ -10,6 +10,7 @@ const links = [
 	{ id: 4, url: "destination", text: "destination" },
 	{ id: 5, url: "singleBlog", text: "blog" },
 	{ id: 6, url: "contact", text: "contact" },
+	{ id: 7, url: "bookings", text: "bookings" },
 ];
 
 const NavLinks = () => {
@@ -32,7 +33,7 @@ const NavLinks = () => {
 					</li>
 				);
 			})}
-			{/* Search Bar at the End */}
+			
 			<li className="ml-10">
 				<SearchBar />
 			</li>
