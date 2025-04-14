@@ -1,14 +1,28 @@
 import React from 'react'
 import { Footer, Hero, Navbar } from '../components'
 import header from '../assets/AboutHero.jpg'
+import greatTeam from '../assets/great.png'
+import vision from '../assets/vision.png'
+import mission from '../assets/mission.png'
+import aboutPerson from '../assets/Aboutperson.png'
+import quoteIcon from '../assets/icon.png'
+import aboutIcon1 from '../assets/Abouticon1.png'
+import aboutIcon2 from '../assets/Abouticon2.png'
+import aboutIcon3 from '../assets/Abouticon3.png'
+import aboutIcon4 from '../assets/Abouticon4.png'
+import aboutWomen from '../assets/AboutWomen.png'
+import aboutDubai from '../assets/AboutDubai.png'
+import aboutParis from '../assets/AboutParis.png'
+import aboutItaly from '../assets/AboutItaly.png'
+import aboutBg from '../assets/About2.png'
+
 const About = () => {
 	return (
 		<>
 			<section
-				className="bg-cover bg-center  h-screen"
+				className="bg-cover bg-center h-screen"
 				style={{ backgroundImage: `url(${header})` }}
 			>
-				{' '}
 				<p>Hello about us</p>
 				<Hero
 					className={`items-center`}
@@ -16,11 +30,12 @@ const About = () => {
 					link={`about`}
 				/>
 			</section>
-			<div className="flex mt-20 ml-5 mb-20 justify-around flex-wrap gap-y-10 ">
+
+			<div className="flex mt-20 ml-5 mb-20 justify-around flex-wrap gap-y-10">
 				<div className="flex flex-col justify-center items-center ml-1 text-center max-w-xs">
 					<img
-						className="w-16 mb-4 "
-						src="src/assets/great.png"
+						className="w-16 mb-4"
+						src={greatTeam}
 						alt="Great team work"
 					/>
 					<h1 className="text-2xl font-bold mt-3 mb-2">
@@ -35,29 +50,26 @@ const About = () => {
 				</div>
 
 				<div className="flex flex-col justify-center items-center text-center max-w-xs">
-					<img
-						className="w-16 mb-4"
-						src="src/assets/vision.png"
-						alt=""
-					/>
+					<img className="w-16 mb-4" src={vision} alt="Our Vision" />
 					<h1 className="text-2xl font-bold mt-3 mb-2">Our Vision</h1>
-					<p className="text-sm w-80  text-gray-400">
+					<p className="text-sm w-80 text-gray-400">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Ipsa amet animi corporis inventore porro eveniet quod
 						nobis illum iure facilis. Reiciendis voluptatum cumque
 						distinctio nemo beatae dolore non, dicta nulla.
 					</p>
 				</div>
+
 				<div className="flex flex-col justify-center items-center text-center max-w-xs">
 					<img
 						className="w-16 mb-4"
-						src="src/assets/mission.png"
-						alt=""
+						src={mission}
+						alt="Our Mission"
 					/>
 					<h1 className="text-2xl font-bold mt-3 mb-2">
 						Our Mission
 					</h1>
-					<p className="text-sm w-80  text-gray-400">
+					<p className="text-sm w-80 text-gray-400">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Ipsa amet animi corporis inventore porro eveniet quod
 						nobis illum iure facilis. Reiciendis voluptatum cumque
@@ -69,17 +81,13 @@ const About = () => {
 			<div className="ml-5 mr-5 mb-20 flex flex-wrap justify-center">
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 					<div className="flex justify-center">
-						<img
-							className="w-100"
-							src="src/assets/Aboutperson.png"
-							alt="person"
-						/>
+						<img className="w-100" src={aboutPerson} alt="person" />
 					</div>
 
 					<div className="px-4">
 						<img
 							className="w-10 mb-4"
-							src="src/assets/icon.png"
+							src={quoteIcon}
 							alt="quote icon"
 						/>
 
@@ -108,77 +116,73 @@ const About = () => {
 				</div>
 			</div>
 
-			<div className="mb-20 bg-[url('/src/assets/About2.png')] bg-cover bg-center h-100 flex justify-center items-center">
-				<div className=" grid grid-cols-2 md:grid-cols-4 gap-25 ">
+			<div
+				className="mb-20 bg-cover bg-center h-100 flex justify-center items-center"
+				style={{ backgroundImage: `url(${aboutBg})` }}
+			>
+				<div className="grid grid-cols-2 md:grid-cols-4 gap-25">
 					<img
-						className="w-45  mb-4"
-						src="/src/assets/Abouticon1.png"
+						className="w-45 mb-4"
+						src={aboutIcon1}
 						alt="Satisfied Clients"
 					/>
 
 					<img
-						className="w-45  mb-4"
-						src="/src/assets/Abouticon2.png"
+						className="w-45 mb-4"
+						src={aboutIcon2}
 						alt="New Travellers"
 					/>
 
 					<img
-						className="w-45   mb-4"
-						src="/src/assets/Abouticon3.png"
+						className="w-45 mb-4"
+						src={aboutIcon3}
 						alt="Destinations"
 					/>
 
-					<img
-						className="w-45  mb-4"
-						src="/src/assets/Abouticon4.png"
-						alt="Awards"
-					/>
+					<img className="w-45 mb-4" src={aboutIcon4} alt="Awards" />
 				</div>
 			</div>
 
-			<div className="mb-20 ">
-				<p className="text-gray-400 text-center ">Gallary</p>
+			<div className="mb-20">
+				<p className="text-gray-400 text-center">Gallary</p>
 				<h1 className="font-bold text-xl text-center">
 					Unforgettable moment
 				</h1>
 				<div className="container mx-auto px-4 py-12">
-					{/* Grid Layout */}
-					<div className="grid grid-cols-1 md:grid-cols-3  gap-4  ">
-						{/* Large Left Image (Bali) - spans 2 rows */}
-						<div className=" md:row-span-2 relative group overflow-hidden rounded-xl">
+					<div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+						{/* Large Left Image */}
+						<div className="md:row-span-2 relative group overflow-hidden rounded-xl">
 							<img
-								src="src/assets/AboutWomen.png"
-								alt="Bali Destination"
-								className=" h-full  transition-transform duration-500 group-hover:scale-105"
+								src={aboutWomen}
+								alt="Women"
+								className="h-full transition-transform duration-500 group-hover:scale-105"
 							/>
 						</div>
 
-						{/* Top Right (Dubai) */}
-						<div className="md:col-span-2 relative group overflow-hidden rounded-xl ">
+						{/* Top Right */}
+						<div className="md:col-span-2 relative group overflow-hidden rounded-xl">
 							<img
-								src="src/assets/AboutDubai.png"
-								alt="Dubai Destination"
-								className="col-span-2 h-full transition-transform duration-500 group-hover:scale-105"
+								src={aboutDubai}
+								alt="Dubai"
+								className="h-full transition-transform duration-500 group-hover:scale-105"
 							/>
 						</div>
 
-						{/* Bottom Right (Paris + Italy) */}
-						<div className=" grid grid-cols-2 gap-6">
-							{/* Paris */}
-							<div className="relative group overflow-hidden rounded-xl ">
+						{/* Bottom Right */}
+						<div className="grid grid-cols-2 gap-6">
+							<div className="relative group overflow-hidden rounded-xl">
 								<img
-									src="src/assets/AboutParis.png"
-									alt="Paris Destination"
-									className=" h-full object-cover transition-transform duration-500 group-hover:scale-105"
+									src={aboutParis}
+									alt="Paris"
+									className="h-full object-cover transition-transform duration-500 group-hover:scale-105"
 								/>
 							</div>
 
-							{/* Italy */}
-							<div className="relative group overflow-hidden rounded-xl ">
+							<div className="relative group overflow-hidden rounded-xl">
 								<img
-									src="src/assets/AboutItaly.png"
-									alt="Italy Destination"
-									className=" h-full object-cover transition-transform duration-500 group-hover:scale-105"
+									src={aboutItaly}
+									alt="Italy"
+									className="h-full object-cover transition-transform duration-500 group-hover:scale-105"
 								/>
 							</div>
 						</div>

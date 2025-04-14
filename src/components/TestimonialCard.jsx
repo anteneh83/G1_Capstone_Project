@@ -2,7 +2,7 @@ import StarRating from './StarRating'
 
 function TestimonialCard({ testimonial }) {
 	return (
-		<div className="group bg-white border border-solid h-auto border-gray-300 rounded-2xl p-6 transition-all duration-500 w-full hover:border-indigo-600 slide-active:border-indigo-600">
+		<div className="group bg-white h-auto shadow-xl my-8 rounded-2xl p-6 transition-all duration-500 w-[93%] hover:border-indigo-600 slide-active:border-indigo-600">
 			<div className="flex items-center mb-9 gap-2 text-amber-500 transition-all duration-500 group-hover:text-indigo-600 swiper-slide-active:text-indigo-600">
 				<StarRating rating={testimonial.stars} />
 			</div>
