@@ -34,6 +34,8 @@ const NavLinks = () => {
 							{showIcons && (
 								<>
 									<img
+										loading="lazy"
+										decoding="async"
 										src={dropdownIcon}
 										alt="dropdown"
 										className="w-3 h-3"

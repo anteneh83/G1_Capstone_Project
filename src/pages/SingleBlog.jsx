@@ -101,6 +101,8 @@ const SingleBlog = () => {
 			<div className="flex flex-col lg:flex-row max-w-[1512px] mx-auto px-4 lg:px-20 pt-20 gap-12">
 				<div className="flex-1">
 					<img
+						loading="lazy"
+						decoding="async"
 						src={TravelBlog1}
 						alt="Travel Blog 1"
 						className="w-full rounded-xl"
@@ -119,6 +121,8 @@ const SingleBlog = () => {
 						magna aliqua.
 					</p>
 					<img
+						loading="lazy"
+						decoding="async"
 						src={TravelBlog2}
 						alt="Travel Blog 2"
 						className="w-full rounded-xl mt-6"
@@ -142,6 +146,8 @@ const SingleBlog = () => {
 						<div className="flex gap-4">
 							{socialIcons.map((icon, idx) => (
 								<img
+									loading="lazy"
+									decoding="async"
 									key={idx}
 									src={icon.src}
 									alt={icon.alt}
@@ -151,6 +157,8 @@ const SingleBlog = () => {
 						</div>
 					</div>
 					<img
+						loading="lazy"
+						decoding="async"
 						src={LineIcon}
 						alt="Divider"
 						className="w-full border border-[#C4C4C4] mt-10"
@@ -169,6 +177,8 @@ const SingleBlog = () => {
 								className={`flex max-[480px]:flex-col max-[480px]:gap-5 gap-10 mb-6 last:mb-0`}
 							>
 								<img
+									loading="lazy"
+									decoding="async"
 									src={post.image}
 									alt={`Recent Post ${index + 1}`}
 									className="w-[149px] h-[99px]"
@@ -195,6 +205,8 @@ const SingleBlog = () => {
 									<input type="radio" name="my-accordion-1" />
 									<div className="collapse-title font-semibold flex gap-2">
 										<img
+											loading="lazy"
+											decoding="async"
 											src={ArrowIcon}
 											alt="Arrow"
 											className="w-[19px] mr-6"
@@ -223,6 +235,8 @@ const SingleBlog = () => {
 						<div className="mt-8 space-y-5">
 							<div className="flex items-center justify-center gap-4">
 								<img
+									loading="lazy"
+									decoding="async"
 									src={PhoneIcon}
 									alt="Phone"
 									className="w-[19px]"
@@ -233,6 +247,8 @@ const SingleBlog = () => {
 							</div>
 							<div className="flex items-center justify-center gap-4">
 								<img
+									loading="lazy"
+									decoding="async"
 									src={GmailIcon}
 									alt="Email"
 									className="w-[22px]"

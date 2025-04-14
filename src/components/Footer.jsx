@@ -38,7 +38,13 @@ const Footer = () => {
 			<div className="py-8 flex flex-col align-element  justify-around flex-wrap items-center space-y-4 md:flex-row space-x-0 md:space-x-8 md:items-start">
 				{/* LOGO */}
 				<div className="hidden md:flex md:flex-col space-y-2 max-w-sm items-center md:items-start">
-					<img src={logo} alt="logo" className="w-40 h-auto" />
+					<img
+						loading="lazy"
+						decoding="async"
+						src={logo}
+						alt="logo"
+						className="w-40 h-auto"
+					/>
 					<p className="text-gray-500">
 						Lorem ipsum dolor sit, amet consectetur adipisicing
 						elit. Voluptatibus eum exercitationem inventore amet

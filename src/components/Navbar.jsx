@@ -13,7 +13,13 @@ const Navbar = () => {
 						to="/"
 						className="w-[27%] min-w-[8rem] min-[340px]:min-w-[12rem] "
 					>
-						<img className="" src={logo1} alt="logo" />
+						<img
+							loading="lazy"
+							decoding="async"
+							className=""
+							src={logo1}
+							alt="logo"
+						/>
 					</NavLink>
 
 					<div className="dropdown dropdown-center hidden mx-5 max-[1093px]:block">

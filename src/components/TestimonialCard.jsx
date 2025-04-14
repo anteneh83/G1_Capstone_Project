@@ -11,6 +11,8 @@ function TestimonialCard({ testimonial }) {
 			</p>
 			<div className="flex items-center gap-5">
 				<img
+					loading="lazy"
+					decoding="async"
 					className="rounded-full object-cover"
 					src={testimonial.image}
 					alt={testimonial.name}

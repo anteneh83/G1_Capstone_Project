@@ -21,6 +21,8 @@ const Choose = () => {
 					<div className="card bg-white shadow-md rounded-lg w-full max-w-xs mx-auto">
 						<div className="card-body items-center text-center p-6">
 							<img
+								loading="lazy"
+								decoding="async"
 								src={bestService}
 								alt="Best Service"
 								className="w-14 mb-4"
@@ -42,6 +44,8 @@ const Choose = () => {
 					<div className="card bg-white shadow-xl rounded-lg w-full max-w-xs mx-auto">
 						<div className="card-body items-center text-center p-6">
 							<img
+								loading="lazy"
+								decoding="async"
 								src={bestService}
 								alt="Price Guarantee"
 								className="w-14 mb-4"
@@ -63,6 +67,8 @@ const Choose = () => {
 					<div className="card bg-white shadow-xl rounded-lg w-full max-w-xs mx-auto">
 						<div className="card-body items-center text-center p-6">
 							<img
+								loading="lazy"
+								decoding="async"
 								src={bestService}
 								alt="Handpicked Hotels"
 								className="w-16 mb-4"

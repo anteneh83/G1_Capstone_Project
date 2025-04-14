@@ -18,6 +18,8 @@ function Partners() {
 			<div className="flex flex-wrap justify-around gap-y-6 items-center gap-3 py-8">
 				<div className="w-[150px] h-[44px] px-4">
 					<img
+						loading="lazy"
+						decoding="async"
 						className="w-full h-full object-fit"
 						src={partner4}
 						alt="Katana "
@@ -26,6 +28,8 @@ function Partners() {
 
 				<div className="w-[149px] h-[27px] px-4">
 					<img
+						loading="lazy"
+						decoding="async"
 						className="w-full h-full object-fit"
 						src={partner5}
 						alt="travava "
@@ -34,6 +38,8 @@ function Partners() {
 
 				<div className="w-[94px] h-[51px] px-4">
 					<img
+						loading="lazy"
+						decoding="async"
 						className="w-full h-full object-fit"
 						src={partner1}
 						alt="Bigui"
@@ -41,6 +47,8 @@ function Partners() {
 				</div>
 				<div className="w-[228px] h-[41px] px-4">
 					<img
+						loading="lazy"
+						decoding="async"
 						className="w-full h-full object-fit"
 						src={partner2}
 						alt="Booking.com "
@@ -48,6 +56,8 @@ function Partners() {
 				</div>
 				<div className="w-[146px] h-[31px] px-4">
 					<img
+						loading="lazy"
+						decoding="async"
 						className="w-full h-full object-fit"
 						src={partner3}
 						alt="Jakmaen "
