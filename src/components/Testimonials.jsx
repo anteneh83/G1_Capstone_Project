@@ -105,7 +105,7 @@ export default function Testimonials() {
 
 	return (
 		<section className="py-24">
-			<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+			<div className="mx-auto max-w-[1300px] px-4 sm:px-6">
 				<div className="mb-14 flex flex-col justify-center items-center sm:flex-row sm:items-center sm:justify-between max-sm:gap-8">
 					<h2 className="text-4xl text-center font-bold text-gray-900 lg:text-left">
 						Testimonials
@@ -116,9 +116,9 @@ export default function Testimonials() {
 					</div>
 				</div>
 				<div className="swiper mySwiper">
-					<div className="swiper-wrapper">
+					<div className="swiper-wrapper px-4">
 						{testimonials.map((testimonial, index) => (
-							<div key={index} className="swiper-slide">
+							<div key={index} className="swiper-slide ">
 								<TestimonialCard testimonial={testimonial} />
 							</div>
 						))}
