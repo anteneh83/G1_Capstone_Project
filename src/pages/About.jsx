@@ -34,7 +34,7 @@ const About = () => {
 			<div className="flex mt-20 ml-5 mb-20 justify-around flex-wrap gap-y-10">
 				<div className="flex flex-col justify-center items-center ml-1 text-center max-w-xs">
 					<img
-						className="w-16 mb-4"
+						className="object-cover w-16 mb-4"
 						src={greatTeam}
 						alt="Great team work"
 					/>
@@ -50,7 +50,11 @@ const About = () => {
 				</div>
 
 				<div className="flex flex-col justify-center items-center text-center max-w-xs">
-					<img className="w-16 mb-4" src={vision} alt="Our Vision" />
+					<img
+						className="object-cover w-16 mb-4"
+						src={vision}
+						alt="Our Vision"
+					/>
 					<h1 className="text-2xl font-bold mt-3 mb-2">Our Vision</h1>
 					<p className="text-sm w-80 text-gray-400">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -62,7 +66,7 @@ const About = () => {
 
 				<div className="flex flex-col justify-center items-center text-center max-w-xs">
 					<img
-						className="w-16 mb-4"
+						className="object-cover w-16 mb-4"
 						src={mission}
 						alt="Our Mission"
 					/>
@@ -86,7 +90,7 @@ const About = () => {
 
 					<div className="px-4">
 						<img
-							className="w-10 mb-4"
+							className="object-cover w-10 mb-4"
 							src={quoteIcon}
 							alt="quote icon"
 						/>
@@ -122,24 +126,28 @@ const About = () => {
 			>
 				<div className="grid grid-cols-2 md:grid-cols-4 gap-25">
 					<img
-						className="w-45 mb-4"
+						className="object-cover w-45 mb-4"
 						src={aboutIcon1}
 						alt="Satisfied Clients"
 					/>
 
 					<img
-						className="w-45 mb-4"
+						className="object-cover w-45 mb-4"
 						src={aboutIcon2}
 						alt="New Travellers"
 					/>
 
 					<img
-						className="w-45 mb-4"
+						className="object-cover w-45 mb-4"
 						src={aboutIcon3}
 						alt="Destinations"
 					/>
 
-					<img className="w-45 mb-4" src={aboutIcon4} alt="Awards" />
+					<img
+						className="w-45 object-cover mb-4"
+						src={aboutIcon4}
+						alt="Awards"
+					/>
 				</div>
 			</div>
 
@@ -155,7 +163,7 @@ const About = () => {
 							<img
 								src={aboutWomen}
 								alt="Women"
-								className="h-full transition-transform duration-500 group-hover:scale-105"
+								className="h-full object-cover transition-transform duration-500 group-hover:scale-105"
 							/>
 						</div>
 
@@ -164,7 +172,7 @@ const About = () => {
 							<img
 								src={aboutDubai}
 								alt="Dubai"
-								className="h-full transition-transform duration-500 group-hover:scale-105"
+								className="h-full object-cover transition-transform duration-500 group-hover:scale-105"
 							/>
 						</div>
 

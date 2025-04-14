@@ -1,4 +1,5 @@
 import Button from './Button'
+import StarRating from './StarRating'
 
 function PackageCard({ package: offeredPackage }) {
 	return (
@@ -18,9 +19,9 @@ function PackageCard({ package: offeredPackage }) {
 				<p className="text-[15px] text-[#555555] font-medium">
 					{offeredPackage.description}
 				</p>
-				<div className="flex justify-between  items-center">
+				<div className="flex justify-between gap-2 items-center">
 					<div className="xl:text-[1.1rem] xlm:text-[1.3rem]">
-						⭐⭐⭐⭐⭐
+						{<StarRating />}
 					</div>
 					<Button btnType="medium">Booking Now</Button>
 				</div>

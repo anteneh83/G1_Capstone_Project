@@ -1,10 +1,10 @@
-function StarRating() {
+function StarRating({ size = 'w-5 h-5' }) {
 	return (
 		<div className="flex items-center gap-2 text-amber-500">
 			{[...Array(5)].map((_, i) => (
 				<svg
 					key={i}
-					className="w-5 h-5"
+					className={`${size}`}
 					viewBox="0 0 18 17"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
