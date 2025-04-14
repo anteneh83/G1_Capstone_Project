@@ -30,7 +30,7 @@ const Landing = () => {
 							<br /> natural beauty.
 						</p>
 
-						<div className="flex flex-col sm:justify-between w-[28rem] md:w-[30rem] lg:w-[37rem] sm:flex-row sm:items-center bg-none sm:bg-white sm:rounded-full sm:shadow-md px-2 py-2 gap-2 text-white sm:gap-4">
+						<div className="flex flex-col sm:justify-between w-fit sm:w-[28rem] md:w-[30rem] lg:w-[37rem] sm:flex-row sm:items-center bg-none sm:bg-white sm:rounded-full sm:shadow-md px-2 py-2 gap-2 text-white sm:gap-4">
 							<select className="w-fit  lg:text-lg text-base sm:text-gray-700 bg-transparent px-2 py-2 outline-none">
 								<option>Location</option>
 							</select>

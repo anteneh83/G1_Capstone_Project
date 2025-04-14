@@ -9,7 +9,10 @@ const Navbar = () => {
 		<nav className="bg-[#120B0B82] fixed w-screen glass z-1000">
 			<div className="px-3 sm:px-4 md:px-7 lg:px-10">
 				<div className="flex justify-between items-center">
-					<NavLink to="/" className="w-[27%] min-w-[12rem] ">
+					<NavLink
+						to="/"
+						className="w-[27%] min-w-[8rem] min-[340px]:min-w-[12rem] "
+					>
 						<img className="" src={logo1} alt="logo" />
 					</NavLink>
 
@@ -19,7 +22,7 @@ const Navbar = () => {
 						</label>
 						<ul
 							tabIndex={0}
-							className="menu menu-sm px-5 mx-10 dropdown-content mt-3 z-[1] p-2 shadow bg-gray-500/80 text-white rounded-box w-50"
+							className="menu menu-sm px-5 mr-15 dropdown-content mt-3 z-[1] p-2 shadow bg-gray-500/80 text-white rounded-box w-50"
 						>
 							<NavLinks />
 						</ul>

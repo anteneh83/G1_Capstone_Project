@@ -76,11 +76,11 @@ const SingleBlog = () => {
 					title="single blog"
 					link={`singleblog`}
 				>
-					<div className="h-screen opacity-100 flex flex-col gap-6 items-center justify-center pl-20">
-						<h1 className="text-white font-bold tracking-wider text-5xl capitalize max-w-xl leading-15 text-center">
+					<div className="h-screen opacity-100 flex flex-col gap-6 items-center justify-center px-10">
+						<h1 className="text-white font-bold tracking-wider text-3xl sm:text-5xl capitalize max-w-xl leading-15 text-center">
 							travel stories for now and the future
 						</h1>
-						<div className="flex gap-10 md:gap-30 text-white">
+						<div className="flex flex-wrap gap-10 md:gap-30 text-white">
 							<div className="flex gap-2 items-center">
 								<CiUser />
 								<p className="align-top">Hashmar</p>
@@ -162,14 +162,18 @@ const SingleBlog = () => {
 						<h2 className="text-[36px] font-medium text-black mb-6">
 							Recent Post
 						</h2>
+
 						{posts.map((post, index) => (
-							<div key={index} className={`flex mb-6 last:mb-0`}>
+							<div
+								key={index}
+								className={`flex max-[480px]:flex-col max-[480px]:gap-5 gap-10 mb-6 last:mb-0`}
+							>
 								<img
 									src={post.image}
 									alt={`Recent Post ${index + 1}`}
 									className="w-[149px] h-[99px]"
 								/>
-								<div className="ml-6">
+								<div>
 									<h3 className="text-[18px] font-medium text-black mb-2">
 										{post.title}
 									</h3>
