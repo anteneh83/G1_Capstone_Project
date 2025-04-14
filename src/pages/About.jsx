@@ -41,7 +41,7 @@ const About = () => {
 					<h1 className="text-2xl font-bold mt-3 mb-2">
 						Great team work
 					</h1>
-					<p className="text-sm w-80 text-gray-400">
+					<p className="text-sm max-w-80 text-gray-400">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Ipsa amet animi corporis inventore porro eveniet quod
 						nobis illum iure facilis. Reiciendis voluptatum cumque
@@ -56,7 +56,7 @@ const About = () => {
 						alt="Our Vision"
 					/>
 					<h1 className="text-2xl font-bold mt-3 mb-2">Our Vision</h1>
-					<p className="text-sm w-80 text-gray-400">
+					<p className="text-sm max-w-80 text-gray-400">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Ipsa amet animi corporis inventore porro eveniet quod
 						nobis illum iure facilis. Reiciendis voluptatum cumque
@@ -73,7 +73,7 @@ const About = () => {
 					<h1 className="text-2xl font-bold mt-3 mb-2">
 						Our Mission
 					</h1>
-					<p className="text-sm w-80 text-gray-400">
+					<p className="text-sm max-w-80 text-gray-400">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Ipsa amet animi corporis inventore porro eveniet quod
 						nobis illum iure facilis. Reiciendis voluptatum cumque
