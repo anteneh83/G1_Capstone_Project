@@ -11,9 +11,11 @@ const Card = ({ card, onClick, active = false }) => {
 		>
 			<figure>
 				<img
+					loading="lazy"
+					decoding="async"
 					src={card.image}
 					className={`object-cover  w-full h-[316px] ${className}`}
-					alt="Shoes"
+					alt={card.title}
 				/>
 
 				{active && (

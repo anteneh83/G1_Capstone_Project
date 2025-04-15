@@ -1,6 +1,8 @@
 function Indicator({ imageUrl, onClick }) {
 	return (
 		<img
+			loading="lazy"
+			decoding="async"
 			src={imageUrl}
 			alt="Left Arrow"
 			onClick={(e) => onClick(e)}

@@ -1,12 +1,11 @@
-
-import taiwanImage from "../assets/taiwan.png";
-import thailandImage from "../assets/thailand.png";
-import singaporeImage from "../assets/singapore.png";
-import parisImage from "../assets/paris1.png";
-import indonesiImage from "../assets/indonesi.png";
-import swissImage from "../assets/swiss.png";
-import planeImage from "../assets/package-plane.png";
-import storyImage1 from "../assets/package-story-1.png/";
+import taiwanImage from '../assets/taiwan.png'
+import thailandImage from '../assets/thailand.png'
+import singaporeImage from '../assets/singapore.png'
+import parisImage from '../assets/paris1.png'
+import indonesiImage from '../assets/indonesi.png'
+import swissImage from '../assets/swiss.png'
+import planeImage from '../assets/package-plane.png'
+import storyImage1 from '../assets/package-story-1.png/'
 import header from '../assets/package-hero.png'
 import { Navbar, Footer, Hero, Button } from '../components'
 import PackageCard from '../components/PackageCard'
@@ -107,6 +106,8 @@ const Package = () => {
 				</section>
 				<div>
 					<img
+						loading="lazy"
+						decoding="async"
 						src={planeImage}
 						alt=""
 						className="w-full pt-6 object-cover md:h-[400px] h-[300px] xl:h-[542px]"
@@ -171,6 +172,8 @@ const Package = () => {
 
 						<div className="row-start-1 max-[580px]:max-h-[580px] md:max-xl:justify-self-center md:col-start-1 md:max-xl:col-end-3 shadow-lg rounded-xl bg-white xl:row-end-3 xl:col-start-2 grid gap-0 grid-rows-[auto_1fr]">
 							<img
+								loading="lazy"
+								decoding="async"
 								className="md:h-[520px] xl:h-[679px] w-full rounded-t-xl object-cover"
 								src={storyImage1}
 								alt=""

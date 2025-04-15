@@ -34,25 +34,16 @@ const About = () => {
 			<div className="flex mt-20 ml-5 mb-20 justify-around flex-wrap gap-y-10">
 				<div className="flex flex-col justify-center items-center ml-1 text-center max-w-xs">
 					<img
-						className="w-16 mb-4"
+						loading="lazy"
+						decoding="async"
+						className="object-cover w-16 mb-4"
 						src={greatTeam}
 						alt="Great team work"
 					/>
 					<h1 className="text-2xl font-bold mt-3 mb-2">
 						Great team work
 					</h1>
-					<p className="text-sm w-80 text-gray-400">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Ipsa amet animi corporis inventore porro eveniet quod
-						nobis illum iure facilis. Reiciendis voluptatum cumque
-						distinctio nemo beatae dolore non, dicta nulla.
-					</p>
-				</div>
-
-				<div className="flex flex-col justify-center items-center text-center max-w-xs">
-					<img className="w-16 mb-4" src={vision} alt="Our Vision" />
-					<h1 className="text-2xl font-bold mt-3 mb-2">Our Vision</h1>
-					<p className="text-sm w-80 text-gray-400">
+					<p className="text-sm max-w-80 text-gray-400">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Ipsa amet animi corporis inventore porro eveniet quod
 						nobis illum iure facilis. Reiciendis voluptatum cumque
@@ -62,14 +53,33 @@ const About = () => {
 
 				<div className="flex flex-col justify-center items-center text-center max-w-xs">
 					<img
-						className="w-16 mb-4"
+						loading="lazy"
+						decoding="async"
+						className="object-cover w-16 mb-4"
+						src={vision}
+						alt="Our Vision"
+					/>
+					<h1 className="text-2xl font-bold mt-3 mb-2">Our Vision</h1>
+					<p className="text-sm max-w-80 text-gray-400">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Ipsa amet animi corporis inventore porro eveniet quod
+						nobis illum iure facilis. Reiciendis voluptatum cumque
+						distinctio nemo beatae dolore non, dicta nulla.
+					</p>
+				</div>
+
+				<div className="flex flex-col justify-center items-center text-center max-w-xs">
+					<img
+						loading="lazy"
+						decoding="async"
+						className="object-cover w-16 mb-4"
 						src={mission}
 						alt="Our Mission"
 					/>
 					<h1 className="text-2xl font-bold mt-3 mb-2">
 						Our Mission
 					</h1>
-					<p className="text-sm w-80 text-gray-400">
+					<p className="text-sm max-w-80 text-gray-400">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit.
 						Ipsa amet animi corporis inventore porro eveniet quod
 						nobis illum iure facilis. Reiciendis voluptatum cumque
@@ -81,12 +91,20 @@ const About = () => {
 			<div className="ml-5 mr-5 mb-20 flex flex-wrap justify-center">
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 					<div className="flex justify-center">
-						<img className="w-100" src={aboutPerson} alt="person" />
+						<img
+							loading="lazy"
+							decoding="async"
+							className="w-100"
+							src={aboutPerson}
+							alt="person"
+						/>
 					</div>
 
 					<div className="px-4">
 						<img
-							className="w-10 mb-4"
+							loading="lazy"
+							decoding="async"
+							className="object-cover w-10 mb-4"
 							src={quoteIcon}
 							alt="quote icon"
 						/>
@@ -122,24 +140,36 @@ const About = () => {
 			>
 				<div className="grid grid-cols-2 md:grid-cols-4 gap-25">
 					<img
-						className="w-45 mb-4"
+						loading="lazy"
+						decoding="async"
+						className="object-cover w-45 mb-4"
 						src={aboutIcon1}
 						alt="Satisfied Clients"
 					/>
 
 					<img
-						className="w-45 mb-4"
+						loading="lazy"
+						decoding="async"
+						className="object-cover w-45 mb-4"
 						src={aboutIcon2}
 						alt="New Travellers"
 					/>
 
 					<img
-						className="w-45 mb-4"
+						loading="lazy"
+						decoding="async"
+						className="object-cover w-45 mb-4"
 						src={aboutIcon3}
 						alt="Destinations"
 					/>
 
-					<img className="w-45 mb-4" src={aboutIcon4} alt="Awards" />
+					<img
+						loading="lazy"
+						decoding="async"
+						className="w-45 object-cover mb-4"
+						src={aboutIcon4}
+						alt="Awards"
+					/>
 				</div>
 			</div>
 
@@ -153,18 +183,22 @@ const About = () => {
 						{/* Large Left Image */}
 						<div className="md:row-span-2 relative group overflow-hidden rounded-xl">
 							<img
+								loading="lazy"
+								decoding="async"
 								src={aboutWomen}
 								alt="Women"
-								className="h-full transition-transform duration-500 group-hover:scale-105"
+								className="h-full object-cover transition-transform duration-500 group-hover:scale-105"
 							/>
 						</div>
 
 						{/* Top Right */}
 						<div className="md:col-span-2 relative group overflow-hidden rounded-xl">
 							<img
+								loading="lazy"
+								decoding="async"
 								src={aboutDubai}
 								alt="Dubai"
-								className="h-full transition-transform duration-500 group-hover:scale-105"
+								className="h-full object-cover transition-transform duration-500 group-hover:scale-105"
 							/>
 						</div>
 
@@ -172,6 +206,8 @@ const About = () => {
 						<div className="grid grid-cols-2 gap-6">
 							<div className="relative group overflow-hidden rounded-xl">
 								<img
+									loading="lazy"
+									decoding="async"
 									src={aboutParis}
 									alt="Paris"
 									className="h-full object-cover transition-transform duration-500 group-hover:scale-105"
@@ -180,6 +216,8 @@ const About = () => {
 
 							<div className="relative group overflow-hidden rounded-xl">
 								<img
+									loading="lazy"
+									decoding="async"
 									src={aboutItaly}
 									alt="Italy"
 									className="h-full object-cover transition-transform duration-500 group-hover:scale-105"

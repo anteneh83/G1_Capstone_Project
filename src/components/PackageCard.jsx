@@ -1,9 +1,12 @@
 import Button from './Button'
+import StarRating from './StarRating'
 
 function PackageCard({ package: offeredPackage }) {
 	return (
 		<div className="space-y-4  max-w-[27.8rem] min-w-[13rem] mb-6 bg-white shadow-lg rounded-[10px] pb-2">
 			<img
+				loading="lazy"
+				decoding="async"
 				src={offeredPackage.imgUrl}
 				className="w-full h-[319px] object-cover rounded-t-[10px] bg-stone-500"
 				alt=""
@@ -18,9 +21,9 @@ function PackageCard({ package: offeredPackage }) {
 				<p className="text-[15px] text-[#555555] font-medium">
 					{offeredPackage.description}
 				</p>
-				<div className="flex justify-between  items-center">
+				<div className="flex justify-between gap-2 items-center">
 					<div className="xl:text-[1.1rem] xlm:text-[1.3rem]">
-						⭐⭐⭐⭐⭐
+						{<StarRating />}
 					</div>
 					<Button btnType="medium">Booking Now</Button>
 				</div>
